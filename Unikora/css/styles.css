@@ -1,0 +1,269 @@
+.input_group_box.type2 {
+    height: 40px;
+}
+
+.row_cont.select_date select {
+    width: 220px;
+}
+
+.row_cont.select_date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table_img_box {
+    align-items: center;
+    display: flex;
+    margin: 8px 0;
+}
+
+.table_img_box img {
+    border-radius: 100px;
+    height: 90px;
+    width: 90px;
+}
+
+.table_img_box .img_file_name {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 0 20px;
+}
+
+.photo_group {
+    align-items: flex-end;
+    display: flex;
+}
+
+.photo_group .photo_box {
+    background: #ddd;
+    height: 132px;
+    margin: 0 20px 0 0;
+    width: 132px;
+}
+
+.photo_group .photo_info {
+    align-items: center;
+    display: flex;
+}
+
+
+.photo_group .photo_info li {
+    margin: 0 20px 0 0;
+}
+
+.photo_up_desc {
+    color: #0071E3;
+}
+
+.btn_add_file.type2 {
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    height: 24px;
+    padding: 0;
+    width: 74px;
+}
+
+.comm_btn.btn_id_check {
+    height: 40px;
+    margin: 0 0 0 4px;
+    width: 160px;
+}
+
+.num_group {
+    align-items: center;
+    display: flex;
+    width: 410px;
+}
+
+.num_group span {
+    margin: 0 8px;
+}
+
+.info_message {
+    color: #F55F5F;
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+
+.col_group {
+    display: flex;
+    margin: 0 -20px;
+}
+
+.col_group>div {
+    margin: 0 20px;
+    width: 50%;
+}
+
+.mid_tab_list.type2 {
+    justify-content: flex-start;
+}
+
+.input_row.type5 {
+    width: 380px;
+}
+
+.input_row.type6 {
+    width: 180px;
+}
+
+.img_group {
+    align-items: center;
+    display: flex;
+    margin: 8px 0;
+}
+
+.img_group .img {
+    background: #ddd;
+    height: 132px;
+    margin: 0 20px 0 0;
+    width: 132px;
+}
+
+.img_group ul li {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    margin: 8px 0;
+}
+
+.comm_table.type2 table {
+    height: 100%;
+}
+
+.input_row .inp_label.type2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.comm_input.inp_date.type2 {
+    background: #ffffff url(../images/ico_cal.png) right 14px center no-repeat;
+    padding-right: 38px;
+}
+
+.btn_reset {
+    align-items: center;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #000;
+    display: inline-flex;
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: 40px;
+    justify-content: center;
+    width: 74px;
+}
+
+.btn_down.type2 {
+    height: 40px;
+}
+
+.status_box.type2 {
+    width: 64px;
+}
+
+.bg_green {
+    background: #2CDA9B;
+    color: #fff;
+}
+
+.user_basic .user_phone span {
+    align-items: center;
+    color: #0071E3;
+    display: flex;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.btn_change {
+    border-radius: 5px;
+    background: #7A7A7A;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    height: 24px;
+    margin: 0 4px;
+    width: 52px;
+}
+
+.user_box.type2 {
+    flex-wrap: nowrap;
+}
+
+.user_box.type2 .detail_box+.detail_box {
+    margin-left: 20px;
+}
+
+.mid_tab_box.type2 {
+    justify-content: flex-start;
+}
+
+.btn_check {
+    background: #000;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    width: 120px;
+}
+
+.my_30 {
+    margin: 30px 0;
+}
+
+.comm_table tbody td {
+    padding: 8px 4px !important;
+}
+
+.bg_gray_20 {
+    background: #ddd;
+}
+
+.comm_table.type3 {
+    border-top: 1px solid #000000 !important;
+    border-bottom: 0;
+}
+
+.comm_table.type3 thead tr th {
+    border: 1px solid #b3b3b3;
+}
+
+.comm_table.type3 tbody tr td {
+    border: 1px solid #b3b3b3;
+}
+
+.comm_table.type3 tbody tr td:last-child {
+    border-right: 0;
+}
+
+.comm_table.type3 tbody tr td:first-child {
+    border-left: 0;
+}
+
+.bl_none {
+    border-left: 0 !important;
+}
+
+.br_none {
+    border-right: 0 !important;
+}
+
+.chart_wrap {
+    background: #f1f1f1;
+    height: 500px;
+    margin-bottom: 38px;
+    width: 100%;
+}
+
+.box_tit.type2 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}

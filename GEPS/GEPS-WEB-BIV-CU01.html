@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공무원연금공단</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header-top-wrap">
+                <div class="container">
+                    <div class="header-top">
+                        <ul>
+                            <li>
+                                <i class="i i-user"></i>
+                                <a href="#">관리자</a>님 (접속 : 2023-07-17 15:19:02)
+                            </li>
+                            <li>
+                                <i class="i i-clock"></i><span>00:29:49</span>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-mini btn-outline-gray">로그아웃</button>
+                        <!-- <a href="#">로그인</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom-wrap">
+                <div class="container">
+                    <div class="header-bottom">
+                        <a href="#" class="header-logo">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                        <div class="header-right">
+                            <nav class="header-navbar">
+                                <ul>
+                                    <li class="active"><a href="#">신상조사</a></li>
+                                    <li><a href="#">생체정보 등록현황</a></li>
+                                    <li><a href="#">VC 발급현황</a></li>
+                                    <li><a href="#">통계조회</a></li>
+                                    <li><a href="#">서비스 관리</a></li>
+                                    <li><a href="#">시스템관리</a></li>
+                                </ul>
+                            </nav>
+                            <button type="button" class="header-menu">
+                                <i class="i i-menu"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-sub-wrap">
+                <div class="container">
+                    <div class="header-sub-navbar">
+                        <div class="col-2">
+                            <h5 class="title">신상조사</h5>
+                            <ul>
+                                <li><a href="#">신상조사 실시현황</a></li>
+                                <li><a href="#">신상조사 등록관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">생체정보 등록현황</h5>
+                            <ul>
+                                <li><a href="#">생체정보 등록현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">VC 발급현황</h5>
+                            <ul>
+                                <li><a href="#">VC 발급현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">통계조회</h5>
+                            <div class="col-group">
+                                <button class="dropdown-button" data-target="subNav01">신상조사 통계</button>
+                                <ul id="subNav01" class="dropdown-list">
+                                    <li><a href="#">신상조사 실시/응답</a></li>
+                                    <li><a href="#">응답 소요시간</a></li>
+                                    <li><a href="#">신상조사 통계지표</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-group">
+                                <button class="dropdown-button" data-target="subNav02">서비스 통계</button>
+                                <ul id="subNav02" class="dropdown-list">
+                                    <li><a href="#">VC 발급현황</a></li>
+                                    <li><a href="#">연금증 발급현황</a></li>
+                                    <li><a href="#">OCR 본인인증 신분증</a></li>
+                                    <li><a href="#">DID 검증이력</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-group">
+                                <button class="dropdown-button active">사용자 통계</button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">서비스 관리</h5>
+                            <ul>
+                                <li><a href="#">공지사항 관리</a></li>
+                                <li><a href="#">FAQ 관리</a></li>
+                                <li><a href="#">팝업 관리</a></li>
+                                <li><a href="#">메시징 관리</a></li>
+                                <li><a href="#">서비스 이용약관 관리</a></li>
+                                <li><a href="#">생체정보 안내기간 설정</a></li>
+                                <li><a href="#">신상조사 안내관리</a></li>
+                                <li><a href="#">앱서비스 관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">시스템관리</h5>
+                            <ul>
+                                <li><a href="#">관리자 관리</a></li>
+                                <li><a href="#">메뉴권한 관리</a></li>
+                                <li><a href="#">시스템 이력조회</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="search-wrapper">
+                <div class="container">
+                    <div class="search-wrap">
+                        <div class="legend">신상조사 실시현황</div>
+                        <ul class="bread-crumb">
+                            <li><i class="i i-home"></i></li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li class="active">신상조사</li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li>신상조사 실시현황</li>
+                        </ul>
+                    </div>
+                    <form action="#" class="form bg-white pa4864 g32">
+                        <div class="options-wrapper">
+                            <div class="options-wrap">
+                                <div class="input-group">
+                                    <label for="">고객번호</label>
+                                    <input type="text" placeholder="번호를 입력하세요">
+                                </div>
+                                <div class="date-group">
+                                    <h2>생년월일</h2>
+                                    <div class="date-wrap">
+                                        <input type="date" placeholder="시작일">
+                                        <span>-</span>
+                                        <input type="date">
+                                    </div>
+                                </div>
+                                <div class="dropdown-group">
+                                    <h2>타이틀</h2>
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop01">전체</button>
+                                        <ul id="drop01" class="dropdown-list">
+                                            <li><a href="#">신상조사 실시/응답</a></li>
+                                            <li><a href="#">응답 소요시간</a></li>
+                                            <li><a href="#">신상조사 통계지표</a></li>
+                                            <hr>
+                                            <li><a href="#">신상조사 실시/응답</a></li>
+                                            <li><a href="#">응답 소요시간</a></li>
+                                            <li><a href="#">신상조사 통계지표</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="radio-wrap">
+                                    <h2>본인인증 여부</h2>
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio01" checked>
+                                        <label for="radio01">전체</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio02">
+                                        <label for="radio02">인증</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio03">
+                                        <label for="radio03">미인증</label>
+                                    </div>
+                                </div>
+                                <div class="check-wrap">
+                                    <h2>신상조사 여부</h2>
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk" checked>
+                                        <label for="chk">전체</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk02">
+                                        <label for="chk02">성공</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk03">
+                                        <label for="chk03">실패</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk04">
+                                        <label for="chk04">미수행</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="options-wrap">
+                                <div class="input-group">
+                                    <label for="">이름</label>
+                                    <input type="text" placeholder="이름을 입력하세요">
+                                </div>
+                                <div class="input-group">
+                                    <label for="">회사명</label>
+                                    <input type="text" placeholder="회사명 입력하세요">
+                                </div>
+                                <div class="radio-wrap">
+                                    <h2>신상조사 진행상태</h2>
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio04" checked>
+                                        <label for="radio04">전체</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio05">
+                                        <label for="radio05">진행</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio06">
+                                        <label for="radio06">종료</label>
+                                    </div>
+                                </div>
+                                <div class="date-group">
+                                    <h2>신상조사 수행일자</h2>
+                                    <div class="date-wrap">
+                                        <input type="date" placeholder="시작일">
+                                        <span>-</span>
+                                        <input type="date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn btn-md btn-gray"><i class="i i-reset-wh"></i>초기화</button>
+                            <button type="button" class="btn btn-md btn-primary">검색</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sub-cont">
+                    <div class="table-wrap">
+                        <div class="table-top2 mb16">
+                            <ul class="count-wrap">
+                                <li>총</li>
+                                <ul class="count">
+                                    <li class="f-primary">497</li>
+                                    <li>건</li>
+                                </ul>
+                            </ul>
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn-sm btn-outline-gray"><i class="i i-message"></i>메시지
+                                    발송</button>
+                                <button type="button" class="btn btn-sm btn-outline-gray"><i class="i i-power"></i>신상조사
+                                    종료</button>
+                                <button type="button" class="btn btn-sm btn-outline-gray"><i
+                                        class="i i-reset-bk"></i>신상조사 초기화</button>
+                                <button type="button" class="btn btn-sm btn-outline-gray"><i
+                                        class="i i-down"></i>내려받기</button>
+                            </div>
+                        </div>
+                        <table class="basic-table type2" id="">
+                            <colgroup>
+                                <col style="width: 54px;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chkall">
+                                            <label for="chkall">기본</label>
+                                        </div>
+                                    </th>
+                                    <th>회차</th>
+                                    <th>고객번호</th>
+                                    <th>이름</th>
+                                    <th>생년월일</th>
+                                    <th>휴대전화번호</th>
+                                    <th>인증정책</th>
+                                    <th>진행상태</th>
+                                    <th>본인인증여부</th>
+                                    <th>수행여부</th>
+                                    <th>수행일자</th>
+                                    <th>안명인증</th>
+                                    <th>음성인증</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk05" class="chk">
+                                            <label for="chk05">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>000000000000</td>
+                                    <td>김믿음</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>010-0000-0000</td>
+                                    <td>안면</td>
+                                    <td>진행</td>
+                                    <td>미인증</td>
+                                    <td>미수행</td>
+                                    <td>-</td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk06" class="chk">
+                                            <label for="chk06">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>000000000000</td>
+                                    <td>김믿음</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>010-0000-0000</td>
+                                    <td>안면</td>
+                                    <td>진행</td>
+                                    <td>미인증</td>
+                                    <td>미수행</td>
+                                    <td>-</td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk07" class="chk">
+                                            <label for="chk07">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>000000000000</td>
+                                    <td>김믿음</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>010-0000-0000</td>
+                                    <td>안면</td>
+                                    <td>진행</td>
+                                    <td>미인증</td>
+                                    <td>미수행</td>
+                                    <td>-</td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="blue"></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk08" class="chk">
+                                            <label for="chk08">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>000000000000</td>
+                                    <td>김믿음</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>010-0000-0000</td>
+                                    <td>안면</td>
+                                    <td>진행</td>
+                                    <td>미인증</td>
+                                    <td>미수행</td>
+                                    <td>-</td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="red"></span></li>
+                                            <li><span class="red"></span></li>
+                                            <li><span class="red"></span></li>
+                                            <li><span class="red"></span></li>
+                                            <li><span class="red"></span></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk09" class="chk">
+                                            <label for="chk09">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>000000000000</td>
+                                    <td>김믿음</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>010-0000-0000</td>
+                                    <td>안면</td>
+                                    <td>진행</td>
+                                    <td>미인증</td>
+                                    <td>미수행</td>
+                                    <td>-</td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="blue"></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="red"></span></li>
+                                            <li><span class="red"></span></li>
+                                            <li><span class="blue"></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk10" class="chk">
+                                            <label for="chk10">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>000000000000</td>
+                                    <td>김믿음</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>010-0000-0000</td>
+                                    <td>안면</td>
+                                    <td>진행</td>
+                                    <td>미인증</td>
+                                    <td>미수행</td>
+                                    <td>-</td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="blue"></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="red"></span></li>
+                                            <li><span class="red"></span></li>
+                                            <li><span class="blue"></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk11" class="chk">
+                                            <label for="chk11">기본</label>
+                                        </div>
+                                    </td>
+                                    <td><span class="text-ellipsis w-64">2022특별회차</span></td>
+                                    <td>000000000000</td>
+                                    <td>김믿음</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>010-0000-0000</td>
+                                    <td>안면</td>
+                                    <td>진행</td>
+                                    <td>미인증</td>
+                                    <td>미수행</td>
+                                    <td>-</td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="blue"></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="red"></span></li>
+                                            <li><span class="red"></span></li>
+                                            <li><span class="blue"></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk12" class="chk">
+                                            <label for="chk12">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>000000000000</td>
+                                    <td>김믿음</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>010-0000-0000</td>
+                                    <td>안면</td>
+                                    <td>진행</td>
+                                    <td>미인증</td>
+                                    <td>미수행</td>
+                                    <td>-</td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="blue"></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="red"></span></li>
+                                            <li><span class="red"></span></li>
+                                            <li><span class="blue"></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk13" class="chk">
+                                            <label for="chk13">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>000000000000</td>
+                                    <td>김믿음</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>010-0000-0000</td>
+                                    <td>안면</td>
+                                    <td>진행</td>
+                                    <td>미인증</td>
+                                    <td>미수행</td>
+                                    <td>-</td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="blue"></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="red"></span></li>
+                                            <li><span class="red"></span></li>
+                                            <li><span class="blue"></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-chk">
+                                        <div class="check-group">
+                                            <input type="checkbox" id="chk14" class="chk">
+                                            <label for="chk14">기본</label>
+                                        </div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>000000000000</td>
+                                    <td>김믿음</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>010-0000-0000</td>
+                                    <td>안면</td>
+                                    <td>진행</td>
+                                    <td>미인증</td>
+                                    <td>미수행</td>
+                                    <td>YYYY-MM-DD</td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="blue"></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                            <li><span class=""></span></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="circle-group">
+                                            <li><span class="red"></span></li>
+                                            <li><span class="red"></span></li>
+                                            <li><span class="blue"></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <ul>
+                            <li class="double-prev"><a href=""><i class="i i-arrow-double-left"></i></a></li>
+                            <li class="prev"><a href=""><i class="i i-arrow-left-2"></i></a></li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">6</a></li>
+                            <li><a href="">7</a></li>
+                            <li><a href="">8</a></li>
+                            <li><a href="">9</a></li>
+                            <li><a href="">10</a></li>
+                            <li class="next"><a href=""><i class="i i-arrow-right"></i></a></li>
+                            <li class="double-next"><a href=""><i class="i i-arrow-double-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

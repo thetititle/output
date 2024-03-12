@@ -1,0 +1,522 @@
+@charset "utf-8";
+@import url(common.css);
+@import url(ico.css);
+@import url(styles_sub.css);
+
+
+/*
+ * File       : styles.css
+ * Date       : 2023. 10. 19.
+ *
+ */
+
+/* **************************************** *
+ * GEPS-WEB-HOM-MA01
+ * **************************************** */
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 0 94px 0;
+}
+
+.main-cont>.row {
+    margin: 0;
+}
+
+.main-cont .col-8 {
+    padding: 0 30px 0 0;
+}
+
+.main-cont .col-4 {
+    padding: 0 0 0 30px;
+}
+
+.main-cont .card-wrap>.row {
+    margin: 0 -10px;
+}
+
+.main-cont .card-wrap .col-6,
+.main-cont .card-wrap .col-3 {
+    padding: 0 10px;
+}
+
+.main-cont h1.title {
+    align-items: flex-end;
+    display: flex;
+    gap: 8px;
+    margin: 0 0 20px 0;
+}
+
+.main-cont h1.title span {
+    color: #444;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 0 4px 0;
+}
+
+.main-cont h3.title {
+    margin: 0 0 16px 0;
+}
+
+.main-cont .item-group {
+    align-items: center;
+    display: flex;
+}
+
+.main-cont .item-group li {
+    width: 50%;
+}
+
+.main-cont .item-group li:nth-child(1) {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0 32px 0 0;
+}
+
+.main-cont .item-group li:nth-child(2) {
+    padding: 0 0 0 32px;
+}
+
+.item-wrap h5 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.item-area {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-area h3 {
+    align-items: center;
+    color: #000;
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    gap: 2px;
+}
+
+.item-area h3 span {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.item-area dl {
+    text-align: right;
+}
+
+.item-area dl dt {
+    color: #444;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.item-area dl dd {
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    gap: 2px;
+    justify-content: flex-end;
+}
+
+.item-area dl dd.up {
+    color: #F75D5F;
+}
+
+.item-area dl dd.down {
+    color: #3B89FE;
+}
+
+.item-area.dark h3 {
+    color: #fff;
+    line-height: 1.3;
+}
+
+.item-area.dark dl dt {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.chart-legend {
+    display: flex;
+    gap: 20px;
+}
+
+.chart-legend li {
+    align-items: center;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    gap: 4px;
+}
+
+.chart-legend li span {
+    border-radius: 100px;
+    height: 12px;
+    width: 12px;
+}
+
+.chart-legend li span.blue {
+    background: #004F9D;
+}
+
+.chart-legend li span.orange {
+    background: #F98700;
+}
+
+.main-cont .row-wrap {
+    margin: 0 -10px;
+}
+
+.main-cont .row-wrap .col-6 {
+    padding: 0 10px;
+}
+
+.main-notice ul li {
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    ;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    padding: 16px 0;
+}
+
+.main-notice ul li:first-child {
+    padding: 0 0 16px 0;
+}
+
+.main-notice ul li::before {
+    background: #444;
+    border-radius: 100px;
+    content: '';
+    display: inline-block;
+    height: 3px;
+    margin: 0 6px 0 0;
+    width: 3px;
+}
+
+.main-notice ul li b {
+    color: #999;
+    font-weight: 400;
+    margin: 0 0 0 auto;
+}
+
+.main-notice ul li span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: calc(100% - 100px);
+}
+
+.main-app ul {
+    display: flex;
+}
+
+.main-app ul li:nth-child(1) {
+    border-right: 1px solid #eee;
+    padding-right: 40px;
+}
+
+.main-app ul li:nth-child(2) {
+    padding-left: 40px;
+}
+
+.main-app .app-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-app .app-wrap .app-top {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.main-app .app-wrap img {
+    width: 100%;
+}
+
+.main-app .app-wrap .app-top p {
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+    gap: 6px;
+    margin: 0 0 0 auto;
+}
+
+.main-app .app-wrap .app-top p span {
+    border-radius: 100px;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+}
+
+.main-app .app-wrap .app-top p.green {
+    color: #00AA2F;
+}
+
+.main-app .app-wrap .app-top p.green span {
+    background: #00AA2F;
+}
+
+.main-app .app-wrap .app-top p.red {
+    color: #E34140;
+}
+
+.main-app .app-wrap .app-top p.red span {
+    background: #E34140;
+}
+
+/* **************************************** *
+ * GEPS-WEB-STA-US02
+ * **************************************** */
+.sub-cont {
+    padding: 80px 0 120px 0;
+}
+
+.sub-cont-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-cont-top h1 {
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.sub-cont .row {
+    margin: 0 -20px;
+}
+
+.sub-cont .row .col-6 {
+    padding: 0 20px;
+}
+
+/* **************************************** *
+ * GEPS-WEB-STA-BV04
+ * **************************************** */
+.sec-top {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0 16px 0;
+}
+
+.sec-top button {
+    font-size: 14px;
+    height: 36px;
+}
+
+.row .col-12 {
+    padding: 0 20px;
+}
+
+.card-table {
+    text-align: left;
+    width: 100%;
+}
+
+.card-table tbody tr th {
+    color: #444;
+    font-size: 15px;
+    font-weight: 500;
+    height: 28px;
+}
+
+.card-table tbody tr td {
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    height: 28px;
+}
+
+.proceeding {
+    background: #1C2C49;
+    border-radius: 12px;
+    border: 1px solid #1C2C49;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    height: 20px;
+    padding: 2px 8px;
+    margin: 0 0 0 8px;
+}
+
+.proceeding.dark-blue {
+    background: #1C2C49;
+}
+
+.proceeding.red {
+    background: #fff;
+    border-color: #F75D5F;
+    color: #F75D5F;
+}
+
+.proceeding.sky {
+    background: #fff;
+    border-color: #3B89FE;
+    color: #3B89FE;
+}
+
+.proceeding.orange {
+    background: #F98700;
+    border-color: #F98700;
+    color: #fff;
+}
+
+.proceeding.gray {
+    background: #fff;
+    border-color: #999;
+    color: #444;
+}
+
+
+.dl-group {
+    display: flex;
+}
+
+.dl-group dl {
+    border-right: 1px solid #ddd;
+    text-align: center;
+    width: 20%;
+}
+
+.dl-group.type2 dl {
+    border-right: 1px solid #ddd;
+    text-align: center;
+    width: 33.33%;
+}
+
+.dl-group dl:last-child {
+    border: 0;
+}
+
+.dl-group dl dt {
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dl-group dl dd {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 4px 0 0 0;
+}
+
+.sub-cont .card {
+    height: auto;
+}
+
+.dropdown-group-two {
+    display: flex;
+    gap: 4px;
+}
+
+.dropdown-group-two .dropdown-list-wrap {
+    width: 92px;
+}
+
+.dropdown-group-two .dropdown-list-wrap .dropdown-button {
+    font-size: 14px;
+    height: 36px;
+    padding: 0 12px;
+}
+
+.dropdown-group-two .dropdown-list-wrap .dropdown-button::after {
+    height: 12px;
+    right: 12px;
+    width: 12px;
+}
+
+.dropdown-group-two .dropdown-list-wrap .dropdown-list {
+    max-height: 254px;
+    overflow-y: scroll;
+    padding: 8px 4px;
+}
+
+.dropdown-group-two .dropdown-list-wrap .dropdown-list::-webkit-scrollbar {
+    background: none;
+    width: 6px;
+}
+
+.dropdown-group-two .dropdown-list-wrap .dropdown-list::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 100px;
+}
+
+.chart-bottom {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.chart-legend span {
+    border-radius: 100px;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+}
+
+.chart-legend span.yellow {
+    background: #F9CE6E;
+}
+
+.chart-legend span.green {
+    background: #4BC6A1;
+}
+
+.chart-legend span.blue {
+    background: #3C62AA;
+}
+
+.chart-legend span.red {
+    background: #FF615E;
+}
+
+.chart-legend span.skyblue {
+    background: #67BCFA;
+}
+
+.chart-legend span.purple {
+    background: #889AB0;
+}
+
+
+.check-group .chart-legend {
+    align-items: center;
+    gap: 4px;
+}
+
+/* **************************************** *
+ * GEPS-WEB-BIV-LI01
+ * **************************************** */
+.card-table button {
+    display: inline-block;
+    margin: 0 0 0 8px;
+}
+
+.card-list-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-list-wrap .btn-group {
+    height: 100%;
+}
+
+.card-list-wrap .btn-lg {
+    font-size: 15px;
+    width: 120px;
+}

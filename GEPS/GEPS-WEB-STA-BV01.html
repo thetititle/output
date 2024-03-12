@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공무원연금공단</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header-top-wrap">
+                <div class="container">
+                    <div class="header-top">
+                        <ul>
+                            <li>
+                                <i class="i i-user"></i>
+                                <a href="#">관리자</a>님 (접속 : 2023-07-17 15:19:02)
+                            </li>
+                            <li>
+                                <i class="i i-clock"></i><span>00:29:49</span>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-mini btn-outline-gray">로그아웃</button>
+                        <!-- <a href="#">로그인</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom-wrap">
+                <div class="container">
+                    <div class="header-bottom">
+                        <a href="#" class="header-logo">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                        <div class="header-right">
+                            <nav class="header-navbar">
+                                <ul>
+                                    <li><a href="#">신상조사</a></li>
+                                    <li><a href="#">생체정보 등록현황</a></li>
+                                    <li><a href="#">VC 발급현황</a></li>
+                                    <li class="active"><a href="#">통계조회</a></li>
+                                    <li><a href="#">서비스 관리</a></li>
+                                    <li><a href="#">시스템관리</a></li>
+                                </ul>
+                            </nav>
+                            <button type="button" class="header-menu">
+                                <i class="i i-menu"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-sub-wrap">
+                <div class="container">
+                    <div class="header-sub-navbar">
+                        <div class="col-2">
+                            <h5 class="title">신상조사</h5>
+                            <ul>
+                                <li><a href="#">신상조사 실시현황</a></li>
+                                <li><a href="#">신상조사 등록관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">생체정보 등록현황</h5>
+                            <ul>
+                                <li><a href="#">생체정보 등록현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">VC 발급현황</h5>
+                            <ul>
+                                <li><a href="#">VC 발급현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">통계조회</h5>
+                            <div class="col-group">
+                                <button class="dropdown-button" data-target="subNav01">신상조사 통계</button>
+                                <ul id="subNav01" class="dropdown-list">
+                                    <li><a href="#">신상조사 실시/응답</a></li>
+                                    <li><a href="#">응답 소요시간</a></li>
+                                    <li><a href="#">신상조사 통계지표</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-group">
+                                <button class="dropdown-button" data-target="subNav02">서비스 통계</button>
+                                <ul id="subNav02" class="dropdown-list">
+                                    <li><a href="#">VC 발급현황</a></li>
+                                    <li><a href="#">연금증 발급현황</a></li>
+                                    <li><a href="#">OCR 본인인증 신분증</a></li>
+                                    <li><a href="#">DID 검증이력</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-group">
+                                <button class="dropdown-button">사용자 통계</button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">서비스 관리</h5>
+                            <ul>
+                                <li><a href="#">공지사항 관리</a></li>
+                                <li><a href="#">FAQ 관리</a></li>
+                                <li><a href="#">팝업 관리</a></li>
+                                <li><a href="#">메시징 관리</a></li>
+                                <li><a href="#">서비스 이용약관 관리</a></li>
+                                <li><a href="#">생체정보 안내기간 설정</a></li>
+                                <li><a href="#">신상조사 안내관리</a></li>
+                                <li><a href="#">앱서비스 관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">시스템관리</h5>
+                            <ul>
+                                <li><a href="#">관리자 관리</a></li>
+                                <li><a href="#">메뉴권한 관리</a></li>
+                                <li><a href="#">시스템 이력조회</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="search-wrapper">
+                <div class="container">
+                    <div class="search-wrap">
+                        <div class="legend">신상조사 통계</div> 
+                        <ul class="bread-crumb">
+                            <li><i class="i i-home"></i></li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li>통계조회</li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li>신상조사 통계</li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li>신상조사 실시/응답</li>
+                        </ul>
+                    </div>
+                    <div class="tab-wrap mt24 mb40">
+                        <ul>
+                            <li class="active">
+                                <a href="#">신상조사 실시/응답</a>
+                            </li>
+                            <li>
+                                <a href="#">응답 소요시간</a>
+                            </li>
+                            <li>
+                                <a href="#">신상조사 통계지표</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form bg-white pa4048 g40">
+                        <div class="table-top2">
+                            <h2 class="title">신상조사 실시/응답</h2>
+                            <div class="d-flex aic g4">
+                                <div class="dropdown-group type3">
+                                    <h2 class="hidden">타이틀</h2>
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop01"><i
+                                                class="i i-calendar"></i>지난 28일</button>
+                                        <ul id="drop01" class="dropdown-list">
+                                            <li>
+                                                <div class="radio-group radio-sm">
+                                                    <input type="radio" id="radio11" name="radio-group">
+                                                    <label for="radio11">지난 7일</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="radio-group radio-sm">
+                                                    <input type="radio" id="radio12" name="radio-group">
+                                                    <label for="radio12">지난 28일</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="radio-group radio-sm">
+                                                    <input type="radio" id="radio13" name="radio-group">
+                                                    <label for="radio13">지난 90일</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="radio-group radio-sm">
+                                                    <input type="radio" id="radio14" name="radio-group">
+                                                    <label for="radio14">지난 365일</label>
+                                                </div>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <div class="radio-group radio-sm">
+                                                    <input type="radio" id="radio15" name="radio-group">
+                                                    <label for="radio15">2023년</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="radio-group radio-sm">
+                                                    <input type="radio" id="radio16" name="radio-group">
+                                                    <label for="radio16">2022년</label>
+                                                </div>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <div class="radio-group radio-sm">
+                                                    <input type="radio" id="radio17" name="radio-group">
+                                                    <label for="radio17">6월</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="radio-group radio-sm">
+                                                    <input type="radio" id="radio18" name="radio-group">
+                                                    <label for="radio18">5월</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="radio-group radio-sm">
+                                                    <input type="radio" id="radio19" name="radio-group">
+                                                    <label for="radio19">4월</label>
+                                                </div>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <div class="radio-group radio-sm">
+                                                    <input type="radio" id="radio20" name="radio-group">
+                                                    <label for="radio20">사용자 설정</label>
+                                                </div>
+                                            </li>
+    
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-group dropdown-group-two">
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop02">기간별</button>
+                                        <ul id="drop02" class="dropdown-list" style="display: none;">
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">6</a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">6</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop03">일별</button>
+                                        <ul id="drop03" class="dropdown-list" style="display: none;">
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">6</a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">6</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 차트 영역 -->
+                        <div class="chart-wrap" style="background: #f1f1f1; height: 190px;"></div>
+                        <div class="chart-bottom">
+                            <div class="check-group">
+                                <input type="checkbox" id="chk01" checked>
+                                <label for="chk01">
+                                    <p class="chart-legend"><span class="yellow"></span>신규등록</p>
+                                </label>
+                            </div>
+                            <div class="check-group">
+                                <input type="checkbox" id="chk02" checked>
+                                <label for="chk02">
+                                    <p class="chart-legend"><span class="green"></span>실시</p>
+                                </label>
+                            </div>
+                            <div class="check-group">
+                                <input type="checkbox" id="chk03" checked>
+                                <label for="chk03">
+                                    <p class="chart-legend"><span class="blue"></span>응답</p>
+                                </label>
+                            </div>
+                            <div class="check-group">
+                                <input type="checkbox" id="chk04" checked>
+                                <label for="chk04">
+                                    <p class="chart-legend"><span class="red"></span>누적응답</p>
+                                </label>
+                            </div>
+                            <div class="check-group">
+                                <input type="checkbox" id="chk05" checked>
+                                <label for="chk05">
+                                    <p class="chart-legend"><span class="skyblue"></span>기간내응답율</p>
+                                </label>
+                            </div>
+                            <div class="check-group">
+                                <input type="checkbox" id="chk06" checked>
+                                <label for="chk06">
+                                    <p class="chart-legend"><span class="purple"></span>실패</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sub-cont">
+                    <div class="table-wrap">
+                        <div class="table-top">
+                            <button type="button" class="btn btn-sm btn-outline-gray"><i class="i i-down"></i>내려받기</button>
+                        </div>
+                        <table class="basic-table">
+                            <colgroup>
+                                <col style="width: auto;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+                                <col style="width: 150px;">
+
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th rowspan="2">일자</th>
+                                <th colspan="2">신상조사 실시</th>
+                                <th colspan="5">신상조사 응답</th>
+                                <th rowspan="2">실패</th>
+                              </tr>
+                              <tr>
+                                <th>신규등록</th>
+                                <th>실시</th>
+                                <th>응답</th>
+                                <th>미응답</th>
+                                <th>누적응답</th>
+                                <th>기간 내 응답율</th>
+                                <th>관리자 종료</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="tot">합계</td>
+                                <td class="tot">1,742</td>
+                                <td class="tot">-</td>
+                                <td class="tot">1,604</td>
+                                <td class="tot">138</td>
+                                <td class="tot">-</td>
+                                <td class="tot">-</td>
+                                <td class="tot">0</td>
+                                <td class="tot">5</td>
+                              </tr>
+                              <tr>
+                                <td>2023-06-28</td>
+                                <td>0</td>
+                                <td>485</td>
+                                <td>327</td>
+                                <td>138</td>
+                                <td>1,604</td>
+                                <td>70.32%</td>
+                                <td>0</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>2023-06-27</td>
+                                <td>0</td>
+                                <td>713</td>
+                                <td>248</td>
+                                <td>456</td>
+                                <td>1,277</td>
+                                <td>34.78%</td>
+                                <td>0</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>2023-06-27</td>
+                                <td>0</td>
+                                <td>713</td>
+                                <td>248</td>
+                                <td>456</td>
+                                <td>1,277</td>
+                                <td>34.78%</td>
+                                <td>0</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>2023-06-27</td>
+                                <td>0</td>
+                                <td>713</td>
+                                <td>248</td>
+                                <td>456</td>
+                                <td>1,277</td>
+                                <td>34.78%</td>
+                                <td>0</td>
+                                <td>0</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

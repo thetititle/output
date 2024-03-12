@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+    
+            <a href="#" class="mon_item">위기징후 모니터링</a>
+    
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support active">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel">상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </aside>
+    
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+                            <!-- 
+                                현재 미결정 사항
+                                <ul>
+                                    <li></li>
+                                </ul>
+                             -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="col_top">
+                <ul class="sub_tab">
+                    <li>
+                        <a href="#">인테이크</a>
+                    </li>
+                    <li>
+                        <a href="#" class="selected">사례회의</a>
+                    </li>
+                    <li>
+                        <a href="#">서비스일지</a>
+                    </li>
+                    <li>
+                        <a href="#">종결보고</a>
+                    </li>
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈 > 통합안전관리 > <span>사례회의</span></p>
+                </div>
+            </div>
+
+            <div class="contents">
+
+                <div class="col_box user_box">
+                    <div class="user_basic">
+                        <img src="./images/dummy_user.png" alt="">
+
+                        <div class="data_box">
+                            <p class="user_name">홍길동 (김센터 <span class="name_tag">개명전</span>)</p>
+                            <p class="user_birth">1974.12.12<span class="gender_tag">남</span></p>
+                        </div>
+
+                        <div class="data_box">
+                            <p class="user_rank">하나원 기수 : 151<a href="#" class="service_btn">지원서비스 내역 조회</a></p>
+                            <p class="user_phone">010-1111-2222</p>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div class="detail_box">
+                            <p class="head_label">관할 지자체</p>
+                            <span class="border_txt">서울 성북구</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">생계급여</p>
+                            <span class="border_txt">YES</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">의료급여</p>
+                            <span class="border_txt">NO</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">가족구성</p>
+                            <span class="border_txt">기혼</span><span class="addt_txt">남1, 여 2</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="status_box col_red">위기가구<br>대상</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_box search_box">
+                    <div class="search_input_wrap">
+                        <input type="text" class="search_input" placeholder="대상자명을 입력하세요.">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+
+                    <h2 class="box_tit tit_mt">회의정보</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 18%;">
+                                <col style="width: 32%">
+                                <col style="width: 18%;">
+                                <col style="width: 32%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">작성자</th>
+                                    <td>인천하나센터 박철성</td>
+                                    <th scope="row">등록일자</th>
+                                    <td>2023.01.05</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">회의일시<span class="inp_req">*</span></th>
+                                    <td>
+                                        <div class="row_items">
+                                            <div>
+                                                <input type="text" class="comm_input inp_date" placeholder="선택하세요.">
+                                            </div>
+                                            <div class="time_range__wrap">
+                                                <select class="comm_select time_select">
+                                                    <option>선택</option>
+                                                    <option>15시</option>
+                                                    <option>16시</option>
+                                                    <option>17시</option>
+                                                </select>
+                                                <span class="range_txt">~</span>
+                                                <select class="comm_select time_select">
+                                                    <option>선택</option>
+                                                    <option>15시</option>
+                                                    <option>16시</option>
+                                                    <option>17시</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <th scope="row">회의분류<span class="inp_req">*</span></th>
+                                    <td>
+                                        <select class="comm_select m_size">
+                                            <option>선택</option>
+                                            <option>항목1</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">회의장소<span class="inp_req">*</span></th>
+                                    <td>
+                                        <input type="text" class="comm_input" placeholder="최대 100자까지 입력 가능합니다.">
+                                    </td>
+                                    <th scope="row">슈퍼바이저<span class="inp_req">*</span></th>
+                                    <td>
+                                        <input type="text" class="comm_input" placeholder="최대 100자까지 입력 가능합니다.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">참석자<span class="inp_req">*</span></th>
+                                    <td colspan="3">
+                                        <input type="text" class="comm_input" placeholder="최대 200자까지 입력 가능합니다.">
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2 class="box_tit">회의내용</h2>
+
+                    <div class="comm_table horizontal editor">
+                        <table>
+                            <colgroup>
+                                <col style="width: 18%;">
+                                <col style="width: 82%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">욕구 및 주요문제</th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder="최대 1000자까지 입력 가능합니다."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">개입 계획 및 주요 회의 안건</th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder="최대 1000자까지 입력 가능합니다."></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <h2 class="box_tit">회의결과</h2>
+
+                    <div class="comm_table horizontal editor">
+                        <table>
+                            <colgroup>
+                                <col style="width: 18%;">
+                                <col style="width: 82%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">슈퍼비전<span class="inp_req">*</span></th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder="최대 1000자까지 입력 가능합니다."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사례회의 결과<span class="inp_req">*</span></th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder="최대 1000자까지 입력 가능합니다."></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="agree_box">
+                        <div class="chk_box">
+                            <input type="checkbox" id="chk1" class="">
+                            <label for="chk1">개인정보 동의여부</label>
+                        </div>
+                    </div>
+
+
+                    <div class="bottom_btns">
+                        <div class="left_side">
+                            <a href="#" class="comm_btn col_blue">목록</a>
+                        </div>
+
+                        <div class="right_side">
+                            <a href="#" class="comm_btn">삭제</a>
+                            <a href="#" class="comm_btn col_blue">수정</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </main>
+    </div>
+
+    <div class="pop_area">
+        <div class="dim"></div>
+
+        <!-- s: 팝업 컨텐츠 div -->
+        <div class="popup_wrap service">
+            <div class="pop_cont">
+                <h3 class="box_tit">지원서비스 내역 조회</h3>
+                <div class="user_box">
+                    <div class="user_basic">
+                        <img src="./images/dummy_user.png" alt="">
+
+                        <div class="data_box">
+                            <p class="user_name">홍길동 (김센터 <span class="name_tag">개명전</span>)</p>
+                            <p class="user_birth">1974.12.12<span class="gender_tag">남</span></p>
+                        </div>
+
+                        <div class="data_box">
+                            <p class="user_rank">하나원 기수 : 151</p>
+                            <p class="user_phone">010-1111-2222</p>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div class="detail_box">
+                            <p class="head_label">관할 지자체</p>
+                            <span class="border_txt">서울 성북구</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">생계급여</p>
+                            <span class="border_txt">YES</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">의료급여</p>
+                            <span class="border_txt">NO</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">가족구성</p>
+                            <span class="border_txt">기혼</span><span class="addt_txt">남1, 여 2</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="status_box col_red">위기가구<br>대상</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll_area">
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 8%">
+                                <col style="width: 14%">
+                                <col style="width: 14%;">
+                                <col style="width: 12%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">센터명</th>
+                                    <th scope="col">사업명</th>
+                                    <th scope="col">지원일자</th>
+                                    <th scope="col">지원영역</th>
+                                    <th scope="col">지원내용</th>
+                                    <th scope="col">지원방법</th>
+                                    <th scope="col">지원내역</th>
+                                    <th scope="col">지원금</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+
+                                <!-- 조회데이터가 없을때 -->
+                                <tr>
+                                    <td colspan="9" class="no_data">조회된 데이터가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination_wrap">
+                        <div class="pagination">
+                            <span>
+                                <a href="#" class="pg_item" title="첫 페이지">&lt;&lt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="이전 페이지">&lt;</a>
+                            </span>
+                            <span>
+                                <!-- <a href="#" class="pg_item" title="1 페이지">1</a> -->
+                                <span class="pg_item on_page" title="현재 페이지">1</span>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="2 페이지">2</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="3 페이지">3</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="4 페이지">4</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="5 페이지">5</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="6 페이지">6</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="다음 페이지">&gt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="맨 뒤 페이지">&gt;&gt;</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+
+        <div class="popup_wrap person">
+            <div class="pop_cont">
+                <h3 class="box_tit">대상자 조회</h3>
+
+                <div class="input_box">
+                    <div class="input_area horizontal">
+                        <div class="input_row">
+                            <label class="inp_label" for="inp1">하나원 기수</label>
+                            <div class="row_cont">
+                                <input type="text" id="inp1" class="comm_input" placeholder="숫자를 입력하세요.">
+                            </div>
+                        </div>
+
+                        <div class="input_row">
+                            <label class="inp_label" for="inp2">생년월일</label>
+                            <div class="row_cont">
+                                <input type="text" id="inp2" class="comm_input inp_date" placeholder="날짜를 선택하세요.">
+                            </div>
+                        </div>
+
+
+
+                        <div class="input_row type4">
+                            <label class="inp_label" for="inp3">대상자명</label>
+
+                            <div class="chk_box">
+                                <input type="checkbox" id="chk2" class="">
+                                <label for="chk2">개명전 성명으로 검색</label>
+                            </div>
+
+                            <div class="row_cont">
+                                <input type="text" id="inp3" class="comm_input" placeholder="성명을 입력하세요.">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="submit_area">
+                        <a href="#" class="comm_btn search_type">검색</a>
+                    </div>
+                </div>
+
+                <div class="scroll_area">
+                    <div class="comm_table selectable">
+                        <table>
+                            <colgroup>
+                                <col style="width: 8%">
+                                <col style="width: 18%">
+                                <col style="width: 18%;">
+                                <col style="width: 18%;">
+                                <col style="width: 20%;">
+                                <col style="width: 18%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">대상자명</th>
+                                    <th scope="col">개명전 성함</th>
+                                    <th scope="col">성별</th>
+                                    <th scope="col">생년월일</th>
+                                    <th scope="col">하나원 기수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>홍길동</td>
+                                    <td>홍당무</td>
+                                    <td>남</td>
+                                    <td>1999.09.09</td>
+                                    <td>44기</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>홍길동</td>
+                                    <td>홍당무</td>
+                                    <td>남</td>
+                                    <td>1999.09.09</td>
+                                    <td>44기</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>홍길동</td>
+                                    <td>홍당무</td>
+                                    <td>남</td>
+                                    <td>1999.09.09</td>
+                                    <td>44기</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>홍길동</td>
+                                    <td>홍당무</td>
+                                    <td>남</td>
+                                    <td>1999.09.09</td>
+                                    <td>44기</td>
+                                </tr>
+                               
+
+                                <!-- 조회데이터가 없을때 -->
+                                <tr>
+                                    <td colspan="6" class="no_data">조회된 데이터가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination_wrap">
+                        <div class="pagination">
+                            <span>
+                                <a href="#" class="pg_item" title="첫 페이지">&lt;&lt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="이전 페이지">&lt;</a>
+                            </span>
+                            <span>
+                                <!-- <a href="#" class="pg_item" title="1 페이지">1</a> -->
+                                <span class="pg_item on_page" title="현재 페이지">1</span>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="2 페이지">2</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="3 페이지">3</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="4 페이지">4</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="5 페이지">5</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="6 페이지">6</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="다음 페이지">&gt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="맨 뒤 페이지">&gt;&gt;</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+        <!-- e: 팝업 컨텐츠 div -->
+    </div>
+
+
+    <script>
+        // datepicker용 스크립트
+        $(function() {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                showButtonPanel: true,
+                currentText: "오늘",
+                closeText : '닫기',
+                showOtherMonths: true,
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $(".inp_date").datepicker( $.datepicker.regional[ "kr" ] );
+
+
+
+            // 지원서비스 팝업용 샘플 스크립트
+            $(".service_btn").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".service").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".service").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+
+
+            // 대상자조회 팝업 샘플 스크립트
+            $(".search_btn").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".person").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".person").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+            $(".pop_close").on("click",function(e){
+                $(this).parents(".popup_wrap").removeClass("_show");
+                $(this).parents(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+            $(".dim").on("click",function(e){
+                $(this).siblings("._show").removeClass("_show");
+                $(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+        });
+
+     </script>
+
+
+</body>
+</html>

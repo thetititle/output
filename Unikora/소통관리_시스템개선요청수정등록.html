@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+    
+            <a href="#" class="mon_item">위기징후 모니터링</a>
+    
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication active">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel">상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </aside>
+    
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+                            <!-- 
+                                현재 미결정 사항
+                                <ul>
+                                    <li></li>
+                                </ul>
+                             -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="col_top">
+                <ul class="sub_tab">
+                    <li>
+                        <a href="#">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="#">업무공유방</a>
+                    </li>
+                    <li>
+                        <a href="#">자료요청</a>
+                    </li>
+                    <li>
+                        <a href="#" class="selected">시스템 개선요청</a>
+                    </li>
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈  >  소통관리  > <span>시스템 개선요청</span></p>
+                </div>
+            </div>
+
+            <div class="contents">
+
+                <div class="col_box table_box">
+
+                    <h2 class="box_tit tit_mt">시스템 개선요청 수정</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 18%;">
+                                <col style="width: 32%">
+                                <col style="width: 18%;">
+                                <col style="width: 32%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">진행상태</th>
+                                    <td>
+                                        <select class="comm_select auto_full_select">
+                                            <option>선택</option>
+                                            <option>항목1</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </td>
+                                    <th scope="row">카테고리<span class="inp_req">*</span></th>
+                                    <td>
+                                        <select class="comm_select auto_full_select">
+                                            <option>선택</option>
+                                            <option>항목1</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">담당부서</th>
+                                    <td>
+                                        <span class="border_txt">전산실</span>
+                                    </td>
+                                    <th scope="row">문의 서비스<span class="inp_req">*</span></th>
+                                    <td>
+                                        <select class="comm_select auto_full_select">
+                                            <option>선택</option>
+                                            <option>항목1</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">작성자</th>
+                                    <td>인천하나센터 심리상담사 오지명</td>
+                                    <th scope="row">등록일자</th>
+                                    <td>2023.01.05</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">연락처<span class="inp_req">*</span></th>
+                                    <td>
+                                        <input type="text" class="comm_input" placeholder="">
+                                    </td>
+                                    <th scope="row">수정일자</th>
+                                    <td>2023.01.05</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">제목<span class="inp_req">*</span></th>
+                                    <td colspan="3">
+                                        <input type="text" class="comm_input" placeholder="최대 200자까지 입력 가능합니다.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">내용<span class="inp_req">*</span></th>
+                                    <td colspan="3">
+                                        <textarea class="comm_tarea" placeholder="최대 1000자까지 입력 가능합니다."></textarea>
+                                    </td>
+                                </tr>
+
+                                <!-- 내용 바리에이션 (없는 구조만 작업됨) -->
+                                <tr>
+                                    <th scope="row">내용<span class="inp_req">*</span></th>
+                                    <td colspan="3" class="inner_table_layout">
+                                        <div class="comm_table">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 100px;">
+                                                    <col style="width: 100px">
+                                                    <col style="width: auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">장애구분</th>
+                                                        <td colspan="2" class="al_le">
+                                                            <select class="comm_select auto_full_select">
+                                                                <option>선택</option>
+                                                                <option>항목1</option>
+                                                                <option>항목2</option>
+                                                                <option>항목3</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="rowgroup" rowspan="3">세부내용</th>
+                                                        <th scope="row">화면명</th>
+                                                        <td class="al_le">
+                                                            <input type="text" class="comm_input" placeholder="화면명 입력 예) 서비스일지">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">기능</th>
+                                                        <td class="al_le">
+                                                            <select class="comm_select auto_full_select">
+                                                                <option>선택</option>
+                                                                <option>항목1</option>
+                                                                <option>항목2</option>
+                                                                <option>항목3</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">상세</th>
+                                                        <td class="al_le">
+                                                            <input type="text" class="comm_input" placeholder="상세 오류 내용 입력 예) 특정 대상자 조회시 404발생">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row">내용<span class="inp_req">*</span></th>
+                                    <td colspan="3" class="inner_table_layout">
+                                        <div class="comm_table">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 100px;">
+                                                    <col style="width: 96px">
+                                                    <col style="width: auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">장애구분</th>
+                                                        <td colspan="2" class="al_le">
+                                                            <select class="comm_select auto_full_select">
+                                                                <option>선택</option>
+                                                                <option>항목1</option>
+                                                                <option>항목2</option>
+                                                                <option>항목3</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="rowgroup" rowspan="4">세부내용</th>
+                                                        <th scope="row">화면명</th>
+                                                        <td class="al_le">
+                                                            <input type="text" class="comm_input" placeholder="화면명 입력 예) 서비스일지">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">미조회 대상자명</th>
+                                                        <td class="al_le">
+                                                            <select class="comm_select auto_full_select">
+                                                                <option>선택</option>
+                                                                <option>항목1</option>
+                                                                <option>항목2</option>
+                                                                <option>항목3</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">대상자 생년월일</th>
+                                                        <td class="al_le">
+                                                            <input type="text" class="comm_input inp_date" placeholder="선택하세요.">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">대상자 하나원 기수</th>
+                                                        <td class="al_le">
+                                                            <input type="text" class="comm_input" placeholder="상세 오류 내용 입력 예) 특정 상담사명/특정 거주지/하나원 기수">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">내용<span class="inp_req">*</span></th>
+                                    <td colspan="3" class="inner_table_layout">
+                                        <div class="comm_table">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 100px;">
+                                                    <col style="width: 100px">
+                                                    <col style="width: auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">장애구분</th>
+                                                        <td colspan="2" class="al_le">
+                                                            <select class="comm_select auto_full_select">
+                                                                <option>선택</option>
+                                                                <option>항목1</option>
+                                                                <option>항목2</option>
+                                                                <option>항목3</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="rowgroup" rowspan="3">세부내용</th>
+                                                        <th scope="row">화면명</th>
+                                                        <td class="al_le">
+                                                            <input type="text" class="comm_input" placeholder="화면명 입력 예) 센터사업관리">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">사업명</th>
+                                                        <td class="al_le">
+                                                            <input type="text" class="comm_input" placeholder="사업명 입력 (되도록 정확히 입력해야 확인 가능합니다.)">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" class="al_le _none_br">
+                                                            *업로드 불가한 파일이 있을 경우 02-2100-2357 사례이력시스템 담당자에게 연락
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row">답변</th>
+                                    <td colspan="3">
+                                        <textarea class="comm_tarea" placeholder=""></textarea>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="bottom_btns">
+                        <div class="left_side">
+                            <a href="#" class="comm_btn col_blue">목록</a>
+                        </div>
+
+                        <div class="right_side">
+                            <a href="#" class="comm_btn">저장</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </main>
+    </div>
+
+
+
+    <script>
+        // datepicker용 스크립트
+        $(function() {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                showButtonPanel: true,
+                currentText: "오늘",
+                closeText : '닫기',
+                showOtherMonths: true,
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $(".inp_date").datepicker( $.datepicker.regional[ "kr" ] );
+
+
+
+            // 지원서비스 팝업용 샘플 스크립트
+            $(".service_btn").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".service").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".service").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+
+
+            // 대상자조회 팝업 샘플 스크립트
+            $(".search_btn").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".person").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".person").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+            $(".pop_close").on("click",function(e){
+                $(this).parents(".popup_wrap").removeClass("_show");
+                $(this).parents(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+            $(".dim").on("click",function(e){
+                $(this).siblings("._show").removeClass("_show");
+                $(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+        });
+
+     </script>
+
+
+</body>
+</html>

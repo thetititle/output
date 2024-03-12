@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+    
+            <a href="#" class="mon_item">위기징후 모니터링</a>
+    
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support active">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel">상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </aside>
+    
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+                            <ul class="user_menus">
+                                <li>
+                                    <a href="#">로그아웃</a>
+                                </li>
+                                <li>
+                                    <a href="#">개인정보수정</a>
+                                </li>
+                                <li>
+                                    <a href="#">비밀번호 변경</a>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="col_top">
+                <ul class="sub_tab">
+                    <li>
+                        <a href="#" class="selected">인테이크</a>
+                    </li>
+                    <li>
+                        <a href="#">사례회의</a>
+                    </li>
+                    <li>
+                        <a href="#">서비스일지</a>
+                    </li>
+                    <li>
+                        <a href="#">종결보고</a>
+                    </li>
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈 > 위기통합지원 > <span>인테이크</span></p>
+                </div>
+            </div>
+
+            
+            <div class="contents">
+
+                <div class="col_box user_box">
+                    <div class="user_basic">
+                        <img src="./images/dummy_user.png" alt="">
+
+                        <div class="data_box">
+                            <p class="user_name">홍길동 (김센터 <span class="name_tag">개명전</span>)</p>
+                            <p class="user_birth">1974.12.12<span class="gender_tag">남</span></p>
+                        </div>
+
+                        <div class="data_box">
+                            <p class="user_rank">하나원 기수 : 151<a href="#" class="service_btn">지원서비스 내역 조회</a></p>
+                            <p class="user_phone">010-1111-2222
+                                <span class="pre_num">(010-1234-4521)</span>
+                                <button type="button" class="btn_chg">변경</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div class="detail_box">
+                            <p class="head_label">관할 지자체</p>
+                            <span class="border_txt">서울 성북구</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">생계급여</p>
+                            <span class="border_txt">YES</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">의료급여</p>
+                            <span class="border_txt">NO</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">가족구성</p>
+                            <span class="border_txt">기혼</span><span class="addt_txt">남1, 여 2</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="status_box col_red">위기가구<br>대상</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_box mid_tab_box">
+                    <ul class="mid_tab_list">
+                        <li>
+                            <a href="#" class="mid_tab_item">기본사항</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item active">세대유형/수급사항/주거사항</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">경제사항</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">가족/사회적관계/자원</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">건강상태/사회 심리적 상황</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">문제사정</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">스크리닝 판정 사유/서비스계획</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">동의서 업로드</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col_box table_box">
+
+                    <h2 class="box_tit tit_mt">세대유형</h2>
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 80%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">세대유형</th>
+                                    <td>
+                                        <div class="input_group_box box_gab">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup0" id="chk1">
+                                                <label for="chk1">단독(1인)</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup0" id="chk2">
+                                                <label for="chk2">한부모가정</label>
+                                            </div>
+
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup0" id="chk3">
+                                                <label for="chk3">가족(3인 이상)</label>
+                                            </div>
+
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup0" id="chk4">
+                                                <label for="chk4">조손가정</label>
+                                            </div>
+
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup0" id="chk5">
+                                                <label for="chk5">독거노인(65세 이상)</label>
+                                            </div>
+
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup0" id="chk6">
+                                                <label for="chk6">2인가구(사실혼 등)</label>
+                                            </div>
+
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup0" id="chk7">
+                                                <label for="chk7">무연고청소년</label>
+                                            </div>
+
+                                            <div class="etc_item_box">
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup0" id="chk8">
+                                                    <label for="chk8">기타</label>
+                                                </div>
+
+                                                <input type="text" class="comm_input" placeholder="기타일 때만 입력 가능합니다." disabled>
+                                            </div>
+
+                                            
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">특이사항</th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder="최대 1000자까지 입력 가능합니다."></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    
+                    <h2 class="box_tit tit_mt">수급사항</h2>
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 80%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">수급형태</th>
+                                    <td>
+                                        <div class="input_group_box box_gab">
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup0" id="rad1">
+                                                <label for="rad1">일반수급자</label>
+                                            </div>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup0" id="rad2">
+                                                <label for="rad2">조건부수급자</label>
+                                            </div>
+
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup0" id="rad3">
+                                                <label for="rad3">차상위계층</label>
+                                            </div>
+
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup0" id="rad4">
+                                                <label for="rad4">저소득층</label>
+                                            </div>
+
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup0" id="rad5">
+                                                <label for="rad5">비해당</label>
+                                            </div>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">수급사항</th>
+                                    <td>
+                                        <button type="button" class="btn_comm">수급사항 내역 조회</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">특이사항</th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder="최대 1000자까지 입력 가능합니다."></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <h2 class="box_tit tit_mt">주거사항</h2>
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 80%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">주거형태</th>
+                                    <td>
+                                        <div class="input_group_box box_gab">
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad11">
+                                                <label for="rad11">임시거주시설(고시원,쉼터 등)</label>
+                                            </div>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad12">
+                                                <label for="rad12">영구임대</label>
+                                            </div>
+
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad13">
+                                                <label for="rad13">국민임대</label>
+                                            </div>
+
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad14">
+                                                <label for="rad14">일반주택(전세,월세,전월세)</label>
+                                            </div>
+
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad15">
+                                                <label for="rad15">일반주택(자가)</label>
+                                            </div>
+
+                                            <div class="etc_item_box">
+                                                <div class="rad_box">
+                                                    <input type="radio" name="radgroup1" id="rad16">
+                                                    <label for="rad16">기타</label>
+                                                </div>
+
+                                                <input type="text" class="comm_input" placeholder="기타일 때만 입력 가능합니다." disabled>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">특이사항</th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder="최대 1000자까지 입력 가능합니다."></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="bottom_btns">
+                        <div class="left_side">
+                            <a href="#" class="comm_btn col_blue">목록</a>
+                        </div>
+
+                        <div class="right_side">
+                            <a href="#" class="comm_btn">임시저장</a>
+                            <a href="#" class="comm_btn col_blue">다음</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <div class="pop_area">
+        <div class="dim"></div>
+
+        <!-- s: 팝업 컨텐츠 div -->
+        <div class="popup_wrap service">
+            <div class="pop_cont">
+                <h3 class="box_tit">지원서비스 내역 조회</h3>
+                <div class="user_box">
+                    <div class="user_basic">
+                        <img src="./images/dummy_user.png" alt="">
+
+                        <div class="data_box">
+                            <p class="user_name">홍길동 (김센터 <span class="name_tag">개명전</span>)</p>
+                            <p class="user_birth">1974.12.12<span class="gender_tag">남</span></p>
+                        </div>
+
+                        <div class="data_box">
+                            <p class="user_rank">하나원 기수 : 151</p>
+                            <p class="user_phone">010-1111-2222</p>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div class="detail_box">
+                            <p class="head_label">관할 지자체</p>
+                            <span class="border_txt">서울 성북구</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">생계급여</p>
+                            <span class="border_txt">YES</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">의료급여</p>
+                            <span class="border_txt">NO</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">가족구성</p>
+                            <span class="border_txt">기혼</span><span class="addt_txt">남1, 여 2</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="status_box col_red">위기가구<br>대상</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll_area">
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 8%">
+                                <col style="width: 14%">
+                                <col style="width: 14%;">
+                                <col style="width: 12%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">센터명</th>
+                                    <th scope="col">사업명</th>
+                                    <th scope="col">지원일자</th>
+                                    <th scope="col">지원영역</th>
+                                    <th scope="col">지원내용</th>
+                                    <th scope="col">지원방법</th>
+                                    <th scope="col">지원내역</th>
+                                    <th scope="col">지원금</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+
+                                <!-- 조회데이터가 없을때 -->
+                                <tr>
+                                    <td colspan="9" class="no_data">조회된 데이터가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination_wrap">
+                        <div class="pagination">
+                            <span>
+                                <a href="#" class="pg_item" title="첫 페이지">&lt;&lt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="이전 페이지">&lt;</a>
+                            </span>
+                            <span>
+                                <!-- <a href="#" class="pg_item" title="1 페이지">1</a> -->
+                                <span class="pg_item on_page" title="현재 페이지">1</span>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="2 페이지">2</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="3 페이지">3</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="4 페이지">4</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="5 페이지">5</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="6 페이지">6</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="다음 페이지">&gt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="맨 뒤 페이지">&gt;&gt;</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+        <!-- e: 팝업 컨텐츠 div -->
+    </div>
+
+    <script>
+        // datepicker용 스크립트
+        $(function() {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                showButtonPanel: true,
+                currentText: "오늘",
+                closeText : '닫기',
+                showOtherMonths: true,
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $(".inp_date").datepicker( $.datepicker.regional[ "kr" ] );
+        });
+
+
+        // 지원서비스 팝업용 샘플 스크립트
+        $(".service_btn").on("click",function(e){
+            e.preventDefault();
+            if(  !$(".pop_area").hasClass("_show") ){
+                $(".pop_area").addClass("_show");
+                $(".service").addClass("_show");
+                $("body").addClass("_lock");
+            }
+            else {
+                $(".pop_area").removeClass("_show");
+                $(".service").removeClass("_show");
+                $("body").removeClass("_lock");
+            }
+        });
+
+        $(".pop_close").on("click",function(e){
+            $(this).parents(".popup_wrap").removeClass("_show");
+            $(this).parents(".pop_area").removeClass("_show");
+            $("body").removeClass("_lock");
+        });
+
+        $(".dim").on("click",function(e){
+            $(this).siblings("._show").removeClass("_show");
+            $(".pop_area").removeClass("_show");
+            $("body").removeClass("_lock");
+        });
+
+         // 사용자 메뉴 스크립트
+         $(".btn_usermenu").on("click",function(){
+            if( !$(this).hasClass("_opened") ){
+                $(this).addClass("_opened");
+                $(this).siblings(".user_menus").stop().slideDown(200);
+            }
+            else {
+                $(this).removeClass("_opened");
+                $(this).siblings(".user_menus").stop().slideUp(200);
+            }
+        });
+        
+
+     </script>
+
+
+</body>
+</html>

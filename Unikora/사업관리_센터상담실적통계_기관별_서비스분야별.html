@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+
+            <a href="#" class="mon_item">상담일지 작성</a>
+
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel">상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business active">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap active">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+                            <!-- 
+                                현재 미결정 사항
+                                <ul>
+                                    <li></li>
+                                </ul>
+                             -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="col_top">
+                <ul class="sub_tab">
+                    <li>
+                        <a href="#">종합현황</a>
+                    </li>
+                    <li>
+                        <a href="#" class="selected">센터 실적관리 통계</a>
+                    </li>
+                    <li>
+                        <a href="#">재단 상담실적 통계</a>
+                    </li>
+                    <li>
+                        <a href="#">사업실적 통계</a>
+                    </li>
+                    <li>
+                        <a href="#">위기관리 통계</a>
+                    </li>
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈 > 사업관리 > <span>센터 상담실적 통계</span></p>
+                </div>
+            </div>
+
+            <div class="contents">
+
+                <div class="col_box mid_tab_box bg_light">
+                    <ul class="mid_tab_list jcfs">
+                        <li>
+                            <a href="#" class="mid_tab_item active">기관별</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">센터별</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">대상자별</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">상담사별</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">지역별</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col_box table_box y_flex g30">
+                    <div class="d_flex g10">
+                        <ul class="mid_tab_list mini_tab jcfs">
+                            <li>
+                                <a href="#" class="mid_tab_item active">서비스 분야별</a>
+                            </li>
+                            <li>
+                                <a href="#" class="mid_tab_item">상담형태별</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="input_box tbl_select">
+                        <div class="input_area">
+
+                            <div class="input_row type3">
+                                <p class="inp_label type2">상담기간</p>
+                                <div class="row_cont range_date">
+                                    <input type="text" class="comm_input inp_date type2" placeholder="날짜를 입력하세요.">
+                                    <span class="range_txt">~</span>
+                                    <input type="text" class="comm_input inp_date type2" placeholder="날짜를 입력하세요.">
+                                </div>
+                            </div>
+
+                            <div class="btn_wrap">
+                                <a href="#" class="comm_btn search_type">조회</a>
+                                <button type="button" class="btn_reset">초기화</button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn_down type2">엑셀 다운로드</button>
+                    </div>
+                    <div class="comm_table tbl_bkt mt10">
+                        <table>
+                            <colgroup>
+                                <col style="width: 8%;">
+                                <col style="width: auto;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">계</th>
+                                    <th scope="col">위기통합지원</th>
+                                    <th scope="col">사회보장지원</th>
+                                    <th scope="col">법률지원</th>
+                                    <th scope="col">교육·진학지원</th>
+                                    <th scope="col">안전교육지원</th>
+                                    <th scope="col">가족통합지원</th>
+                                    <th scope="col">지역통합지원</th>
+                                    <th scope="col">심리의뢰지원</th>
+                                    <th scope="col">취업의뢰지원</th>
+                                    <th scope="col" class="not_bd">기타</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>하나센터</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>하나재단</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr class="tot2">
+                                    <td>소계</td>
+                                    <td>1,000</td>
+                                    <td>1,000</td>
+                                    <td>1,000</td>
+                                    <td>1,000</td>
+                                    <td>1,000</td>
+                                    <td>1,000</td>
+                                    <td>1,000</td>
+                                    <td>1,000</td>
+                                    <td>1,000</td>
+                                    <td>1,000</td>
+                                    <td>1,000</td>
+                                </tr>
+                                <tr class="tot2">
+                                    <td>분포율(%)</td>
+                                    <td>10%</td>
+                                    <td>10%</td>
+                                    <td>10%</td>
+                                    <td>10%</td>
+                                    <td>10%</td>
+                                    <td>10%</td>
+                                    <td>10%</td>
+                                    <td>10%</td>
+                                    <td>10%</td>
+                                    <td>10%</td>
+                                    <td>10%</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="comm_table tbl_bkt">
+                        <table>
+                            <colgroup>
+                                <col style="width: 8%;">
+                                <col style="width: auto;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                                <col style="width: 8%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">계</th>
+                                    <th scope="col" colspan="5">상담</th>
+                                    <th scope="col" colspan="5" class="not_bd">서비스 지원</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>하나센터</td>
+                                    <td>100</td>
+                                    <td colspan="5">100</td>
+                                    <td colspan="5">100</td>
+                                </tr>
+                                <tr>
+                                    <td>하나재단</td>
+                                    <td>100</td>
+                                    <td colspan="5">100</td>
+                                    <td colspan="5">100</td>
+                                </tr>
+                                <tr class="tot2">
+                                    <td>소계</td>
+                                    <td>1,000</td>
+                                    <td colspan="5">1,000</td>
+                                    <td colspan="5">1,000</td>
+                                </tr>
+                                <tr class="tot2">
+                                    <td>분포율(%)</td>
+                                    <td>10%</td>
+                                    <td colspan="5">100</td>
+                                    <td colspan="5">100</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // datepicker용 스크립트
+        $(function () {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                showButtonPanel: true,
+                currentText: "오늘",
+                closeText: '닫기',
+                showOtherMonths: true,
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $(".inp_date").datepicker($.datepicker.regional["kr"]);
+        });
+
+    </script>
+
+
+</body>
+
+</html>

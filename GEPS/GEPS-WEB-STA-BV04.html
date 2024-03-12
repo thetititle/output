@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공무원연금공단</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header-top-wrap">
+                <div class="container">
+                    <div class="header-top">
+                        <ul>
+                            <li>
+                                <i class="i i-user"></i>
+                                <a href="#">관리자</a>님 (접속 : 2023-07-17 15:19:02)
+                            </li>
+                            <li>
+                                <i class="i i-clock"></i><span>00:29:49</span>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-mini btn-outline-gray">로그아웃</button>
+                        <!-- <a href="#">로그인</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom-wrap">
+                <div class="container">
+                    <div class="header-bottom">
+                        <a href="#" class="header-logo">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                        <div class="header-right">
+                            <nav class="header-navbar">
+                                <ul>
+                                    <li><a href="#">신상조사</a></li>
+                                    <li><a href="#">생체정보 등록현황</a></li>
+                                    <li><a href="#">VC 발급현황</a></li>
+                                    <li class="active"><a href="#">통계조회</a></li>
+                                    <li><a href="#">서비스 관리</a></li>
+                                    <li><a href="#">시스템관리</a></li>
+                                </ul>
+                            </nav>
+                            <button type="button" class="header-menu">
+                                <i class="i i-menu"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-sub-wrap">
+                <div class="container">
+                    <div class="header-sub-navbar">
+                        <div class="col-2">
+                            <h5 class="title">신상조사</h5>
+                            <ul>
+                                <li><a href="#">신상조사 실시현황</a></li>
+                                <li><a href="#">신상조사 등록관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">생체정보 등록현황</h5>
+                            <ul>
+                                <li><a href="#">생체정보 등록현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">VC 발급현황</h5>
+                            <ul>
+                                <li><a href="#">VC 발급현황</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">통계조회</h5>
+                            <div class="col-group">
+                                <button class="dropdown-button" data-target="subNav01">신상조사 통계</button>
+                                <ul id="subNav01" class="dropdown-list">
+                                    <li><a href="#">신상조사 실시/응답</a></li>
+                                    <li><a href="#">응답 소요시간</a></li>
+                                    <li><a href="#">신상조사 통계지표</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-group">
+                                <button class="dropdown-button" data-target="subNav02">서비스 통계</button>
+                                <ul id="subNav02" class="dropdown-list">
+                                    <li><a href="#">VC 발급현황</a></li>
+                                    <li><a href="#">연금증 발급현황</a></li>
+                                    <li><a href="#">OCR 본인인증 신분증</a></li>
+                                    <li><a href="#">DID 검증이력</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-group">
+                                <button class="dropdown-button active">사용자 통계</button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">서비스 관리</h5>
+                            <ul>
+                                <li><a href="#">공지사항 관리</a></li>
+                                <li><a href="#">FAQ 관리</a></li>
+                                <li><a href="#">팝업 관리</a></li>
+                                <li><a href="#">메시징 관리</a></li>
+                                <li><a href="#">서비스 이용약관 관리</a></li>
+                                <li><a href="#">생체정보 안내기간 설정</a></li>
+                                <li><a href="#">신상조사 안내관리</a></li>
+                                <li><a href="#">앱서비스 관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="title">시스템관리</h5>
+                            <ul>
+                                <li><a href="#">관리자 관리</a></li>
+                                <li><a href="#">메뉴권한 관리</a></li>
+                                <li><a href="#">시스템 이력조회</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="content bg-gray">
+            <div class="container">
+                <div class="sub-cont">
+                    <div class="sub-cont-top ais">
+                        <h1>신상조사 통계</h1>
+                        <ul class="bread-crumb">
+                            <li><i class="i i-home"></i></li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li>통계조회</li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li>신상조사 통계</li>
+                            <li><i class="i i-arrow-left"></i></li>
+                            <li>신상조사 통계지표</li>
+                        </ul>
+                    </div>
+                    <div class="tab-wrap mt-6">
+                        <ul>
+                            <li>
+                                <a href="#">신상조사 실시/응답</a>
+                            </li>
+                            <li>
+                                <a href="#">응답 소요시간</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">신상조사 통계지표</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="sec-top">
+                                <h2 class="title">신상조사 내용</h2>
+                                <button type="button" class="btn btn-lg btn-outline-primary">목록</button>
+                            </div>
+
+                            <div class="card card-b card-lg">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <table class="card-table">
+                                            <colgroup>
+                                                <col style="width: 64px;">
+                                                <col style="width: 196px;">
+                                                <col style="width: 64px;">
+                                                <col style="width: 264px">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>회차명</th>
+                                                    <td>6회차</td>
+                                                    <th>실시기간</th>
+                                                    <td>YYYY-MM-DD ~ YYYY-MM-DD<span class="proceeding">진행중</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>인증정책</th>
+                                                    <td>안면 and 음성</td>
+                                                    <th>대상자 수</th>
+                                                    <td>53</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="dl-group">
+                                            <dl>
+                                                <dt>응답(건)</dt>
+                                                <dd>53</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>미응답(건)</dt>
+                                                <dd>3</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>실패(건)</dt>
+                                                <dd>0</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>응답율(%)</dt>
+                                                <dd>92.3</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>평균 응답시간(일)</dt>
+                                                <dd>4.3</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-10">
+                        <div class="col-12">
+                            <div class="card card-md card-b">
+                                <div class="card-top">
+                                    <h2 class="title">VC 발급현황</h2>
+                                    <div class="dropdown-group dropdown-group-two">
+                                        <div class="dropdown-list-wrap">
+                                            <button class="dropdown-button" data-target="drop01">기간별</button>
+                                            <ul id="drop01" class="dropdown-list" style="display: none;">
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="dropdown-list-wrap">
+                                            <button class="dropdown-button" data-target="drop02">일별</button>
+                                            <ul id="drop02" class="dropdown-list" style="display: none;">
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 차트영역 -->
+                                <div class="chart-wrap" style="background: #f1f1f1; height: 190px;"></div>
+
+                                <div class="chart-bottom mt-10">
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk01" checked>
+                                        <label for="chk01">
+                                            <p class="chart-legend"><span class="yellow"></span>본인인증 증명서 (VC1)</p>
+                                        </label>
+                                    </div>
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk02" checked>
+                                        <label for="chk02">
+                                            <p class="chart-legend"><span class="green"></span>공무원 연금증 (VC2)</p>
+                                        </label>
+                                    </div>
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk03" checked>
+                                        <label for="chk03">
+                                            <p class="chart-legend"><span class="blue"></span>신원증명서 (VC3)</p>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="table-wrap mt-10">
+                                    <div class="table-top">
+                                        <button type="button" class="btn btn-sm btn-outline-gray"><i
+                                                class="i i-down"></i>데이터 내려받기</button>
+                                    </div>
+                                    <div class="scroll-y h-392">
+                                        <table class="basic-table">
+                                            <colgroup>
+                                                <col style="width: 25%;">
+                                                <col style="width: 25%;">
+                                                <col style="width: 25%;">
+                                                <col style="width: 25%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>일자</th>
+                                                    <th>본인인증 증명서 (VC1)</th>
+                                                    <th>공무원 연금증 (VC2)</th>
+                                                    <th>신원증명서 (VC3)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><b>합계</b></td>
+                                                    <td><b>52,151</b></td>
+                                                    <td><b>52,151</b></td>
+                                                    <td><b>22,843</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-10">
+                        <div class="col-12">
+                            <div class="card card-md card-b">
+                                <div class="card-top">
+                                    <h2 class="title">신분별 연금증 발급현황</h2>
+                                    <div class="dropdown-group dropdown-group-two">
+                                        <div class="dropdown-list-wrap">
+                                            <button class="dropdown-button" data-target="drop03">막대차트</button>
+                                            <ul id="drop03" class="dropdown-list">
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="dropdown-list-wrap">
+                                            <button class="dropdown-button" data-target="drop04">일별</button>
+                                            <ul id="drop04" class="dropdown-list">
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 차트영역 -->
+                                <div class="chart-wrap" style="background: #f1f1f1; height: 208px;"></div>
+
+                                <div class="chart-bottom mt-10">
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk01" checked>
+                                        <label for="chk01">
+                                            <p class="chart-legend"><span class="yellow"></span>재직자</p>
+                                        </label>
+                                    </div>
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk02" checked>
+                                        <label for="chk02">
+                                            <p class="chart-legend"><span class="green"></span>수급자</p>
+                                        </label>
+                                    </div>
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk03" checked>
+                                        <label for="chk03">
+                                            <p class="chart-legend"><span class="blue"></span>퇴직자</p>
+                                        </label>
+                                    </div>
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk04" checked>
+                                        <label for="chk04">
+                                            <p class="chart-legend"><span class="red"></span>신분변동</p>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="table-wrap mt-10">
+                                    <div class="table-top">
+                                        <button type="button" class="btn btn-sm btn-outline-gray"><i
+                                                class="i i-down"></i>데이터 내려받기</button>
+                                    </div>
+                                    <div class="scroll-y h-392">
+                                        <table class="basic-table">
+                                            <colgroup>
+                                                <col style="width: 20%;">
+                                                <col style="width: 20%;">
+                                                <col style="width: 20%;">
+                                                <col style="width: 20%;">
+                                                <col style="width: 20%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>일자</th>
+                                                    <th>재직자</th>
+                                                    <th>수급자</th>
+                                                    <th>퇴직자</th>
+                                                    <th>신분변동건수</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><b>합계</b></td>
+                                                    <td><b>52,151</b></td>
+                                                    <td><b>52,151</b></td>
+                                                    <td><b>22,843</b></td>
+                                                    <td><b>22,843</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                    <td>42</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-10">
+                        <div class="col-12">
+                            <div class="card card-md card-b">
+                                <div class="card-top">
+                                    <h2 class="title">인증 신분증 종류</h2>
+                                    <div class="dropdown-group dropdown-group-two">
+                                        <div class="dropdown-list-wrap">
+                                            <button class="dropdown-button" data-target="drop05">선차트</button>
+                                            <ul id="drop05" class="dropdown-list">
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="dropdown-list-wrap">
+                                            <button class="dropdown-button" data-target="drop06">일별</button>
+                                            <ul id="drop06" class="dropdown-list">
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 차트영역 -->
+                                <div class="chart-wrap" style="background: #f1f1f1; height: 190px;"></div>
+
+                                <div class="chart-bottom mt-10">
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk01" checked>
+                                        <label for="chk01">
+                                            <p class="chart-legend"><span class="green"></span>주민등록증</p>
+                                        </label>
+                                    </div>
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk03" checked>
+                                        <label for="chk03">
+                                            <p class="chart-legend"><span class="blue"></span>운전면허증</p>
+                                        </label>
+                                    </div>
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk04" checked>
+                                        <label for="chk04">
+                                            <p class="chart-legend"><span class="red"></span>여권</p>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="table-wrap mt-10">
+                                    <div class="table-top">
+                                        <button type="button" class="btn btn-sm btn-outline-gray"><i
+                                                class="i i-down"></i>데이터 내려받기</button>
+                                    </div>
+                                    <div class="scroll-y h-392">
+                                        <table class="basic-table">
+                                            <colgroup>
+                                                <col style="width: 25%;">
+                                                <col style="width: 25%;">
+                                                <col style="width: 25%;">
+                                                <col style="width: 25%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>일자</th>
+                                                    <th>재직자</th>
+                                                    <th>운전면허증</th>
+                                                    <th>여권</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><b>합계</b></td>
+                                                    <td><b>52,151</b></td>
+                                                    <td><b>52,151</b></td>
+                                                    <td><b>22,843</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                    <td>42</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-10">
+                        <div class="col-12">
+                            <div class="card card-md card-b">
+                                <div class="card-top">
+                                    <h2 class="title">사용자 현황</h2>
+                                    <div class="dropdown-group dropdown-group-two">
+                                        <div class="dropdown-list-wrap">
+                                            <button class="dropdown-button" data-target="drop07">회차별</button>
+                                            <ul id="drop07" class="dropdown-list">
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 차트영역 -->
+                                <div class="chart-wrap" style="background: #f1f1f1; height: 190px;"></div>
+
+                                <div class="chart-bottom mt-10">
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk01" checked>
+                                        <label for="chk01">
+                                            <p class="chart-legend"><span class="green"></span>활성 사용자</p>
+                                        </label>
+                                    </div>
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk03" checked>
+                                        <label for="chk03">
+                                            <p class="chart-legend"><span class="red"></span>신규 가입자</p>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="table-wrap mt-10">
+                                    <div class="table-top">
+                                        <button type="button" class="btn btn-sm btn-outline-gray"><i
+                                                class="i i-down"></i>데이터 내려받기</button>
+                                    </div>
+                                    <div class="scroll-y h-392">
+                                        <table class="basic-table">
+                                            <colgroup>
+                                                <col style="width: 33.33%;">
+                                                <col style="width: 33.33%;">
+                                                <col style="width: 33.33%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>일자</th>
+                                                    <th>활성 사용자 (MAU)</th>
+                                                    <th>신규 가입자</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><b>합계</b></td>
+                                                    <td><b>52,151</b></td>
+                                                    <td><b>52,151</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2023-06-28</td>
+                                                    <td>52</td>
+                                                    <td>52</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-10">
+                        <div class="col-6">
+                            <div class="card card-md card-b">
+                                <div class="card-top">
+                                    <h2 class="title">사용자 OS 점유율</h2>
+                                </div>
+                                <!-- 차트 영역 -->
+                                <div class="chart-wrap" style="background: #f1f1f1; height: 330px;"></div>
+
+                                <div class="table-wrap mt-10">
+                                    <div class="table-top">
+                                        <button type="button" class="btn btn-sm btn-outline-gray"><i
+                                                class="i i-down"></i>데이터 내려받기</button>
+                                    </div>
+                                    <div class="scroll-y h-284">
+                                        <table class="basic-table">
+                                            <colgroup>
+                                                <col style="width: 33.33%;">
+                                                <col style="width: 33.33%;">
+                                                <col style="width: 33.33%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>구분</th>
+                                                    <th>가입일자</th>
+                                                    <th>OS 환경</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>********583</td>
+                                                    <td>2023-06-28</td>
+                                                    <td>iOS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>********583</td>
+                                                    <td>2023-06-28</td>
+                                                    <td>iOS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>********583</td>
+                                                    <td>2023-06-28</td>
+                                                    <td>iOS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>********583</td>
+                                                    <td>2023-06-28</td>
+                                                    <td>iOS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>********583</td>
+                                                    <td>2023-06-28</td>
+                                                    <td>iOS</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card card-md card-b">
+                                <div class="card-top">
+                                    <h2 class="title">사용자 디바이스 정보</h2>
+                                </div>
+                                <!-- 차트 영역 -->
+                                <div class="chart-wrap" style="background: #f1f1f1; height: 330px;"></div>
+
+                                <div class="table-wrap mt-10">
+                                    <div class="table-top">
+                                        <button type="button" class="btn btn-sm btn-outline-gray"><i
+                                                class="i i-down"></i>데이터 내려받기</button>
+                                    </div>
+                                    <div class="scroll-y h-284">
+                                        <table class="basic-table">
+                                            <colgroup>
+                                                <col style="width: 33.33%;">
+                                                <col style="width: 33.33%;">
+                                                <col style="width: 33.33%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>구분</th>
+                                                    <th>가입일자</th>
+                                                    <th>OS 환경</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>********583</td>
+                                                    <td>2023-06-28</td>
+                                                    <td>iOS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>********583</td>
+                                                    <td>2023-06-28</td>
+                                                    <td>iOS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>********583</td>
+                                                    <td>2023-06-28</td>
+                                                    <td>iOS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>********583</td>
+                                                    <td>2023-06-28</td>
+                                                    <td>iOS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>********583</td>
+                                                    <td>2023-06-28</td>
+                                                    <td>iOS</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
