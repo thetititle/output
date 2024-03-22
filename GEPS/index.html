@@ -32,7 +32,7 @@
 			<div class="header-bottom-wrap">
 				<div class="container">
 					<div class="header-bottom">
-						<a href="main.html" class="header-logo">
+						<a href="index.html" class="header-logo">
 							<img src="img/logo.png" alt="">
 						</a>
 						<div class="header-right">
@@ -312,7 +312,7 @@
 					<ul>
 						<li>구현페이지</li>
 						<li class="links">
-							<a href="main.html">메인</a>
+							<a href="index.html">메인</a>
 							<a href="statistics.html">통계1</a>
 							<a href="statistics2.html">통계2</a>
 							<a href="statistics3.html">통계3</a>
@@ -356,43 +356,30 @@
 		}
 		checkCookie('GEPSthetititle')
 
-		//사용자의 pc에 쿠키생성
-		//이름=name, 값=value, Epires / Max-Ages=limit로 지정
 		function setCookie(name, value, limit) {
-			//기준이 될 현재 날짜(년월일) 지정
 			var date = new Date();
-			//리밋할 기간 지정 오늘부터 limit일간 유지한다면 limit
 			date.setDate(date.getDate()+limit)
 			var myCookie = '';
-			//CookieName=이름, GEPSthetititle=값
 			myCookie += name + '=' + value+';';
 			myCookie += 'Expires='+date.toUTCString();
-			//쿠키 생성
 			document.cookie = myCookie;
 		}
-		// setCookie('GEPSthetititle','portfolio',1)
 
-		//쿠키 삭제 = 원하는 쿠키의 만기일을 과거로 돌림
 		function delCookie(name){
-			// 기준이 될 현재 날짜(년월일) 지정
 			var date = new Date();
 			date.setDate(date.getDate()-1);
 			var myCookie = '';
-			// CookieName=이름, GEPSthetititle=값
 			myCookie += name + '=portfolio;';
 			myCookie += 'Expires='+date.toUTCString();
-			// 쿠키 이니셜라이즈
 			document.cookie = myCookie;
 		}
 		
 		closeBtn.addEventListener('click', function(){
 			console.log('inputCheck', inputCheck.checked)
 			if(inputCheck.checked){
-				//팝업닫고 쿠키 유지
 				setCookie('GEPSthetititle','portfolio',1)
 				popUp.style.display="none"
 			}else{
-				//팝업닫고 쿠키 삭제
 				delCookie('GEPSthetititle');
 				popUp.style.display="none"
 			}
