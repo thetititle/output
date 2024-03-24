@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <title>통일부 통합지원시스템</title>
+
+    <link
+      type="text/css"
+      href="./css/style.css"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      href="./js/jquery-ui.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+  </head>
+  <body>
+    <div class="login_wrap">
+      <h1 class="login_logo">
+        <img src="./images/logo.png" alt="통일부" />
+        <p>통합지원시스템</p>
+      </h1>
+
+      <div class="login_center">
+        <h2 class="login_tit">통합지원시스템</h2>
+
+        <!-- 01.시스템 로그인 활성 -->
+        <div class="login_cont">
+          <!-- 아래 login_cont_box에 cont_disabled로 적용하면 비활성 상태로 보이게함 -->
+          <div class="login_cont_box">
+            <h3 class="login_cont_tit">
+              01. 시스템 로그인
+            </h3>
+
+            <div class="form_area">
+              <!-- 필요시 <form class="form_area">~</form> 으로 사용해도 무방  -->
+              <input
+                type="text"
+                class="login_inp"
+                placeholder="아이디"
+              />
+              <input
+                type="password"
+                class="login_inp"
+                placeholder="비밀번호"
+              />
+
+              <button type="button" class="btn_login">
+                <a href="system_user.html"> 로그인 </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="login_cont_box cont_disabled">
+            <h3 class="login_cont_tit">
+              02. 공인인증서 로그인
+            </h3>
+
+            <div class="form_area">
+              <button
+                type="button"
+                class="btn_login lg_size"
+                disabled
+              >
+                행정전자서명 로그인
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="login_bottom">
+          <div class="bottom_cont">
+            <p>
+              <span>*</span>정보보호를 위해 비밀번호는
+              타인에게 노출되지 않도록 주의하시기 바랍니다.
+            </p>
+            <p>
+              <span>*</span>업무가 완료되면 정보보호를 위해
+              반드시 로그아웃을 해주세요.
+            </p>
+            <p>
+              <span>*</span>비밀번호 분실, 변경 및 시스템
+              관련 문의는 관리자에게 문의해 주십시오.
+            </p>
+            <p class="str_txt">02-2100-2357</p>
+          </div>
+          <div class="bottom_lnks">
+            <a href="#" class="login_lnk ico_empl"
+              >취업관리시스템 바로가기</a
+            >
+            <a href="#" class="login_lnk ico_mail"
+              >업무망 전자메일 바로가기</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop_area">
+      <div class="dim"></div>
+
+      <!-- s: 팝업 컨텐츠 div -->
+      <div class="popup_wrap login_pop">
+        <div class="pop_cont">
+          <div class="login_pop_top">
+            <p>PORTFOLIO - 통합지원시스템</p>
+          </div>
+          <div class="login_pop_cont">
+            <p>
+              해당 페이지는 구직용 포트폴리오 용도로
+              제작되었으며, 모든 이미지와 콘텐츠의 저작권은
+              공무원연금공단에 있습니다.
+            </p>
+            <ul>
+              <li>
+                <p>제작기간</p>
+                <span>1차 : 2023.08.09~08.10 | 2차 : 2023.08.16~08.19</span>
+              </li>
+              <li>
+                <p>구현페이지</ㅔ>
+                <ul class="list">
+                  <li><a href="system_user.html">사용자관리</a></li>
+                  <li><a href="system_personal.html">개인정보모니터링</a></li>
+                  <li><a href="system_menu.html">메뉴관리</a></li>
+                  <li><a href="system_code.html">코드관리</a></li>
+                  <li><a href="business_center_foundation.html">기관별실적</a></li>
+                  <li><a href="business_center_center.html">센터별실적</a></li>
+                  <li><a href="business_center_subject.html">대상자별실적</a></li>
+                  <li><a href="business_center_counselor.html">상담사별실적</a></li>
+                  <li><a href="business_foundation_category.html">심리검사별</a></li>
+                  <li><a href="business_foundation_how.html">상담방법별</a></li>
+                  <li><a href="business_performance_moveintotal.html">총괄</a></li>
+                  <li><a href="business_performance_request.html">서비스의뢰대상자</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>CONTACT</p>
+                <span>배수지 | thetititle@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+          <div class="login_pop_btn">
+            <fieldset>
+              <input type="checkbox" id="cookies" />
+              <label for="cookies">오늘 하루 안보기</label>
+            </fieldset>
+            <button type="button" class="login_pop_close">
+              닫기
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- e: 팝업 컨텐츠 div -->
+    </div>
+
+    <script>
+      var popUp = document.querySelector('.pop_area');
+      var inputCheck = document.querySelector('#cookies');
+      var closeBtn = document.querySelector('.login_pop_close');
+
+      closeBtn.addEventListener('click', function(){
+        console.log('inputCheck?', inputCheck.checked)
+        if(inputCheck.checked){
+          setCookie('UNIkoreathetititle');
+          popUp.style.display="none"
+        }else{
+          delCookie('UNIkoreathetititle')
+          popUp.style.display="none"
+        }
+      });
+
+      function checkCootie(name){
+        console.log(document.cookie)
+        var CookieList = document.cookie.split(';');
+        var isVisited = false;
+        for(var i in CookieList){
+          if(CookieList[i].indexOf(name) > -1){
+            isVisited = true;
+          }
+        }
+        if(isVisited){
+          popUp.style.display="none"
+        }else{
+          popUp.style.display="block"
+        }
+      };
+      checkCootie('UNIkoreathetititle');
+
+      function setCookie(name, value, limit){
+        var date = new Date();
+        date.setDate(date.getDate()+limit);
+        var myCookie = '';
+        myCookie += name + '=' + value + ';';
+        myCookie += 'Expires='+date.toUTCString();
+
+        document.cookie=myCookie;
+      }
+      setCookie('UNIkoreathetititle', 'portfolio', 1)
+
+      function delCookie(name){
+        var date = new Date();
+        date.setDate(date.getDate()-1);
+        var myCookie = '';
+        myCookie += name + '=portfolio;';
+        myCookie += 'Expires='+date.toUTCString();
+        document.cookie=myCookie;
+      }
+    </script>
+  </body>
+</html>
