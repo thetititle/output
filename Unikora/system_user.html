@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <title>통일부 통합지원시스템</title>
+
+    <link
+      type="text/css"
+      href="./css/style.css"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      href="./js/jquery-ui.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+    <div class="system_wrap">
+      <aside class="left_contents">
+        <h1 class="home">
+          <img src="./images/logo.png" alt="통일부" />
+          <p>통합지원시스템</p>
+        </h1>
+
+        <a href="#" class="mon_item">위기징후 모니터링</a>
+
+        <nav>
+          <ul class="menu_list">
+            <li>
+              <a href="#" class="menu_item ico_subject"
+                >대상자관리</a
+              >
+            </li>
+            <li>
+              <a href="#" class="menu_item ico_crisis"
+                >위기관리</a
+              >
+            </li>
+            <li>
+              <a href="#" class="menu_item ico_support"
+                >위기통합지원</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="menu_item ico_communication"
+                >소통관리</a
+              >
+            </li>
+            <li>
+              <a href="#" class="menu_item ico_statistics"
+                >통계</a
+              >
+            </li>
+            <li>
+              <a href="#" class="menu_item ico_counsel"
+                >상담관리</a
+              >
+            </li>
+            <li>
+              <a
+                href="business_center_foundation.html"
+                class="menu_item ico_business"
+                >사업관리</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="bottom_area">
+          <ul class="menu_list">
+            <li>
+              <a
+                href="system_user.html"
+                class="menu_item ico_adm active"
+                >시스템관리</a
+              >
+            </li>
+          </ul>
+
+          <div class="banner_area">
+            <a href="#" class="banner_wrap active">
+              <img src="./images/img_bann1.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <header>
+          <div class="header_left">
+            <div class="search_person">
+              <input
+                type="text"
+                class="nobg_inp"
+                placeholder="대상자 통합조회"
+              />
+              <button type="button" class="search_btn">
+                검색
+              </button>
+            </div>
+          </div>
+          <div class="header_right">
+            <div class="notification_wrap">
+              <button type="button" class="btn_notif">
+                알림<span>12</span>
+              </button>
+            </div>
+            <div class="user_info">
+              <span class="part_name">통일부</span>
+              <p class="user_name">
+                <span>강안전</span> 주무관
+              </p>
+              <div class="user_menu_wrap">
+                <button type="button" class="btn_usermenu">
+                  사용자메뉴 토글
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="col_top">
+          <ul class="sub_tab">
+            <li>
+              <a href="system_user.html">사용자관리</a>
+            </li>
+            <li>
+              <a href="system_personal.html"
+                >개인정보 모니터링</a
+              >
+            </li>
+            <li>
+              <a href="system_menu.html" class="selected"
+                >메뉴관리</a
+              >
+            </li>
+            <li>
+              <a href="#">권한관리</a>
+            </li>
+            <li>
+              <a href="#">권한관리 변경이력</a>
+            </li>
+            <li>
+              <a href="system_code.html">코드관리</a>
+            </li>
+            <li>
+              <a href="#">팝업관리</a>
+            </li>
+            <li>
+              <a href="#">접속로그</a>
+            </li>
+          </ul>
+
+          <div class="breadcrumb">
+            <p class="bread_item">
+              홈 > 시스템관리 > <span>메뉴관리</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="contents flex_box">
+          <div class="flex1">
+            <div class="row_box">
+              <div class="user_search">
+                <input
+                  type="text"
+                  id="inp5"
+                  class="comm_input"
+                  placeholder="키워드를 입력하세요."
+                />
+                <a href="#" class="comm_btn search_type"
+                  >검색</a
+                >
+              </div>
+              <ul class="user_list">
+                <li class="active">
+                  김길동<span class="icon">arrow</span>
+                </li>
+                <li>
+                  김길은<span class="icon">arrow</span>
+                </li>
+                <li>
+                  김을동<span class="icon">arrow</span>
+                </li>
+                <li>
+                  김을은<span class="icon">arrow</span>
+                </li>
+                <li>
+                  김을금<span class="icon">arrow</span>
+                </li>
+                <li>
+                  김정동<span class="icon">arrow</span>
+                </li>
+                <li>
+                  김정은<span class="icon">arrow</span>
+                </li>
+                <li>
+                  김정금<span class="icon">arrow</span>
+                </li>
+                <li>
+                  김길자<span class="icon">arrow</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex2">
+            <div class="row_box">
+              <div class="menu_ctrl_wrapper">
+                <ul class="menu_ctrl_wrap">
+                  <li>
+                    <ul>
+                      <li class="menu_name_light">
+                        그룹명 :
+                      </li>
+                      <li class="menu_name">홍길동</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li class="menu_name_light">
+                        사용자명 :
+                      </li>
+                      <li class="menu_name">홍길동</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="comm_table">
+                <table>
+                  <colgroup>
+                    <col style="width: 15%" />
+                    <col style="width: 15%" />
+                    <col style="width: 15%" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">대메뉴</th>
+                      <th scope="col">중메뉴</th>
+                      <th scope="col">소메뉴</th>
+                      <th scope="col">권한</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>위기통합지원</td>
+                      <td></td>
+                      <td></td>
+                      <td class="check_warpper">
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk1"
+                          />
+                          <label for="chk1">읽기</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk2"
+                          />
+                          <label for="chk2">저장</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk3"
+                          />
+                          <label for="chk3">삭제</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk4"
+                          />
+                          <label for="chk4">인쇄</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>위기통합지원</td>
+                      <td>인테이크</td>
+                      <td>기본사항</td>
+                      <td class="check_warpper">
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk1"
+                          />
+                          <label for="chk1">읽기</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk2"
+                          />
+                          <label for="chk2">저장</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk3"
+                          />
+                          <label for="chk3">삭제</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk4"
+                          />
+                          <label for="chk4">인쇄</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>위기통합지원</td>
+                      <td>인테이크</td>
+                      <td>세대유형</td>
+                      <td class="check_warpper">
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk1"
+                          />
+                          <label for="chk1">읽기</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk2"
+                          />
+                          <label for="chk2">저장</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk3"
+                          />
+                          <label for="chk3">삭제</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk4"
+                          />
+                          <label for="chk4">인쇄</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>위기통합지원</td>
+                      <td></td>
+                      <td></td>
+                      <td class="check_warpper">
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk1"
+                          />
+                          <label for="chk1">읽기</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk2"
+                          />
+                          <label for="chk2">저장</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk3"
+                          />
+                          <label for="chk3">삭제</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk4"
+                          />
+                          <label for="chk4">인쇄</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>위기통합지원</td>
+                      <td></td>
+                      <td></td>
+                      <td class="check_warpper">
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk1"
+                          />
+                          <label for="chk1">읽기</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk2"
+                          />
+                          <label for="chk2">저장</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk3"
+                          />
+                          <label for="chk3">삭제</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk4"
+                          />
+                          <label for="chk4">인쇄</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>위기통합지원</td>
+                      <td></td>
+                      <td></td>
+                      <td class="check_warpper">
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk1"
+                          />
+                          <label for="chk1">읽기</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk2"
+                          />
+                          <label for="chk2">저장</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk3"
+                          />
+                          <label for="chk3">삭제</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk4"
+                          />
+                          <label for="chk4">인쇄</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>위기통합지원</td>
+                      <td></td>
+                      <td></td>
+                      <td class="check_warpper">
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk1"
+                          />
+                          <label for="chk1">읽기</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk2"
+                          />
+                          <label for="chk2">저장</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk3"
+                          />
+                          <label for="chk3">삭제</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk4"
+                          />
+                          <label for="chk4">인쇄</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>위기통합지원</td>
+                      <td></td>
+                      <td></td>
+                      <td class="check_warpper">
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk1"
+                          />
+                          <label for="chk1">읽기</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk2"
+                          />
+                          <label for="chk2">저장</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk3"
+                          />
+                          <label for="chk3">삭제</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk4"
+                          />
+                          <label for="chk4">인쇄</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>위기통합지원</td>
+                      <td></td>
+                      <td></td>
+                      <td class="check_warpper">
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk1"
+                          />
+                          <label for="chk1">읽기</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk2"
+                          />
+                          <label for="chk2">저장</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk3"
+                          />
+                          <label for="chk3">삭제</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk4"
+                          />
+                          <label for="chk4">인쇄</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>위기통합지원</td>
+                      <td></td>
+                      <td></td>
+                      <td class="check_warpper">
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk1"
+                          />
+                          <label for="chk1">읽기</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk2"
+                          />
+                          <label for="chk2">저장</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk3"
+                          />
+                          <label for="chk3">삭제</label>
+                        </div>
+                        <div class="chk_box">
+                          <input
+                            type="checkbox"
+                            id="chk4"
+                          />
+                          <label for="chk4">인쇄</label>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <!-- 조회데이터가 없을때 -->
+                    <!-- <tr>
+                                        <td colspan="8" class="no_data">조회된 데이터가 없습니다. <br>검색조건을 다시 입력해주세요.</td>
+                                    </tr> -->
+                  </tbody>
+                </table>
+              </div>
+              <div class="bottom_btns">
+                <a href="#" class="comm_btn col_blue"
+                  >저장</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script></script>
+  </body>
+</html>

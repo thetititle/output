@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <title>통일부 통합지원시스템</title>
+
+    <link
+      type="text/css"
+      href="./css/style.css"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      href="./js/jquery-ui.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+    <div class="system_wrap">
+      <aside class="left_contents">
+        <h1 class="home">
+          <img src="./images/logo.png" alt="통일부" />
+          <p>통합지원시스템</p>
+        </h1>
+
+        <a href="#" class="mon_item">위기징후 모니터링</a>
+
+        <nav>
+          <ul class="menu_list">
+            <li>
+              <a href="#" class="menu_item ico_subject"
+                >대상자관리</a
+              >
+            </li>
+            <li>
+              <a href="#" class="menu_item ico_crisis"
+                >위기관리</a
+              >
+            </li>
+            <li>
+              <a href="#" class="menu_item ico_support"
+                >위기통합지원</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="menu_item ico_communication"
+                >소통관리</a
+              >
+            </li>
+            <li>
+              <a href="#" class="menu_item ico_statistics"
+                >통계</a
+              >
+            </li>
+            <li>
+              <a href="#" class="menu_item ico_counsel"
+                >상담관리</a
+              >
+            </li>
+            <li>
+              <a
+                href="business_center_foundation.html"
+                class="menu_item ico_business"
+                >사업관리</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="bottom_area">
+          <ul class="menu_list">
+            <li>
+              <a
+                href="system_user.html"
+                class="menu_item ico_adm active"
+                >시스템관리</a
+              >
+            </li>
+          </ul>
+
+          <div class="banner_area">
+            <a href="#" class="banner_wrap active">
+              <img src="./images/img_bann1.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <header>
+          <div class="header_left">
+            <div class="search_person">
+              <input
+                type="text"
+                class="nobg_inp"
+                placeholder="대상자 통합조회"
+              />
+              <button type="button" class="search_btn">
+                검색
+              </button>
+            </div>
+          </div>
+          <div class="header_right">
+            <div class="notification_wrap">
+              <button type="button" class="btn_notif">
+                알림<span>12</span>
+              </button>
+            </div>
+            <div class="user_info">
+              <span class="part_name">통일부</span>
+              <p class="user_name">
+                <span>강안전</span> 주무관
+              </p>
+              <div class="user_menu_wrap">
+                <button type="button" class="btn_usermenu">
+                  사용자메뉴 토글
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="col_top">
+          <ul class="sub_tab">
+            <li>
+              <a href="system_user.html">사용자관리</a>
+            </li>
+            <li>
+              <a href="system_personal.html"
+                >개인정보 모니터링</a
+              >
+            </li>
+            <li>
+              <a href="system_menu.html" class="selected"
+                >메뉴관리</a
+              >
+            </li>
+            <li>
+              <a href="#">권한관리</a>
+            </li>
+            <li>
+              <a href="#">권한관리 변경이력</a>
+            </li>
+            <li>
+              <a href="system_code.html">코드관리</a>
+            </li>
+            <li>
+              <a href="#">팝업관리</a>
+            </li>
+            <li>
+              <a href="#">접속로그</a>
+            </li>
+          </ul>
+
+          <div class="breadcrumb">
+            <p class="bread_item">
+              홈 > 시스템관리 > <span>메뉴관리</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="contents flex_box">
+          <div class="flex1">
+            <div class="row_box">
+              <div class="user_search">
+                <input
+                  type="text"
+                  id="inp5"
+                  class="comm_input"
+                  placeholder="키워드를 입력하세요."
+                />
+                <a href="#" class="comm_btn search_type"
+                  >검색</a
+                >
+              </div>
+              <div id="accordion">
+                <h3>
+                  <div>
+                    대상자 관리형태<span>toggle</span>
+                  </div>
+                </h3>
+                <div>
+                  <ul class="all_menu_list">
+                    <li>
+                      <a href="#">
+                        <span class="ico_inner">ㄴ</span
+                        >집중지정
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="ico_inner">ㄴ</span
+                        >보류
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <h3>
+                  <div>코드리스트<span>toggle</span></div>
+                </h3>
+                <div></div>
+                <h3>
+                  <div>코드리스트<span>toggle</span></div>
+                </h3>
+                <div></div>
+                <h3>
+                  <div>코드리스트<span>toggle</span></div>
+                </h3>
+                <div></div>
+                <h3>
+                  <div>코드리스트<span>toggle</span></div>
+                </h3>
+                <div></div>
+                <h3>
+                  <div>코드리스트<span>toggle</span></div>
+                </h3>
+                <div></div>
+                <h3>
+                  <div>코드리스트<span>toggle</span></div>
+                </h3>
+                <div></div>
+                <h3>
+                  <div>코드리스트<span>toggle</span></div>
+                </h3>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex2">
+            <div class="row_box">
+              <div class="comm_table horizontal mb30">
+                <table>
+                  <colgroup>
+                    <col style="width: 20%" />
+                    <col style="width: 80%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">상위코드</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="comm_input"
+                          value="대상자 관리형태"
+                          readonly
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">코드명</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="comm_input"
+                          placeholder="코드명 입력"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">코드설명</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="comm_input"
+                          placeholder="코드설명 입력"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">순서</th>
+                      <td>
+                        <input
+                          type="text"
+                          class="comm_input"
+                          placeholder="숫자 입력"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">사용여부</th>
+                      <td>
+                        <div
+                          class="row_cont input_group_box type2"
+                        >
+                          <div class="rad_box">
+                            <input
+                              type="radio"
+                              name="radgroup0"
+                              id="rad1"
+                              checked
+                            />
+                            <label for="rad1">사용</label>
+                          </div>
+                          <div class="rad_box">
+                            <input
+                              type="radio"
+                              name="radgroup0"
+                              id="rad2"
+                            />
+                            <label for="rad2"
+                              >사용안함</label
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="bottom_btns">
+                <a href="#" class="comm_btn col_blue"
+                  >등록</a
+                >
+              </div>
+              <div class="comm_table mt60">
+                <table>
+                  <colgroup>
+                    <col style="width: 50%" />
+                    <col style="width: 50%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="2">추가코드값</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label for="code1" class="hidden"
+                          >추가코드1</label
+                        >
+                        <input
+                          type="text"
+                          id="code1"
+                          class="comm_input"
+                          value="1"
+                        />
+                      </td>
+                      <td>
+                        <label for="code2" class="hidden"
+                          >추가코드1</label
+                        >
+                        <input
+                          type="text"
+                          id="code2"
+                          class="comm_input"
+                          value="1"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table_box">
+                <div class="comm_table mt24">
+                  <table>
+                    <colgroup>
+                      <col style="width: 20%" />
+                      <col style="width: 20%" />
+                      <col style="width: 20%" />
+                      <col style="width: 20%" />
+                      <col style="width: 20%" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>번호</th>
+                        <th>코드명</th>
+                        <th>상위코드명</th>
+                        <th>사용여부</th>
+                        <th>순서</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>코드명 조회</td>
+                        <td>상위코드명 조회</td>
+                        <td>사용</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>코드명 조회</td>
+                        <td>상위코드명 조회</td>
+                        <td>사용</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>코드명 조회</td>
+                        <td>상위코드명 조회</td>
+                        <td>사용</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>코드명 조회</td>
+                        <td>상위코드명 조회</td>
+                        <td>사용</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>코드명 조회</td>
+                        <td>상위코드명 조회</td>
+                        <td>사용</td>
+                        <td>2</td>
+                      </tr>
+                      <!-- 조회데이터가 없을때 -->
+                      <!-- <tr>
+                            <td colspan="9" class="no_data">조회된 데이터가 없습니다. <br>검색조건을 다시 입력해주세요.</td>
+                          </tr> -->
+                    </tbody>
+                  </table>
+                </div>
+                <div class="bottom_btns">
+                  <div class="left_side"></div>
+                  <div class="right_side">
+                    <a href="#" class="comm_btn">저장</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // arcodion용 스크립트
+      $(function () {
+        $('#accordion').accordion({
+          collapsible: true,
+          active: 0,
+        });
+      });
+    </script>
+  </body>
+</html>
