@@ -2,114 +2,114 @@
 
 .i,
 .ico {
-    background-size: cover !important;
-    display: inline-block;
+  background-size: cover !important;
+  display: inline-block;
 }
 
 .i-close {
-    background: url(../img/ico/i-close.svg);
-    height: 24px;
-    width: 24px;
+  background: url(../img/ico/i-close.svg);
+  height: 24px;
+  width: 24px;
 }
 
 .i-user {
-    background: url(../img/ico/i-user-check.png);
-    height: 16px;
-    width: 16px;
+  background: url(../img/ico/i-user-check.png);
+  height: 16px;
+  width: 16px;
 }
 
 .i-clock {
-    background: url(../img/ico/i-clock.png);
-    height: 16px;
-    width: 16px;
+  background: url(../img/ico/i-clock.png);
+  height: 16px;
+  width: 16px;
 }
 
 .i-menu {
-    background: url(../img/ico/i-menu.png);
-    height: 24px;
-    width: 24px;
+  background: url(../img/ico/i-menu.png);
+  height: 24px;
+  width: 24px;
 }
 
 .i-trg-down {
-    background: url(../img/ico/i-trg-down.png);
-    height: 8px;
-    width: 8px;
+  background: url(../img/ico/i-trg-down.png);
+  height: 8px;
+  width: 8px;
 }
 
 .i-trg-up {
-    background: url(../img/ico/i-trg-up.png);
-    height: 8px;
-    width: 8px;
+  background: url(../img/ico/i-trg-up.png);
+  height: 8px;
+  width: 8px;
 }
 
 .i-android {
-    background: url(../img/ico/i-android.png);
-    height: 16px;
-    width: 16px;
+  background: url(../img/ico/i-android.png);
+  height: 16px;
+  width: 16px;
 }
 
 .i-ios {
-    background: url(../img/ico/i-ios.png);
-    height: 16px;
-    width: 16px;
+  background: url(../img/ico/i-ios.png);
+  height: 16px;
+  width: 16px;
 }
 
 .i-home {
-    background: url(../img/ico/i-home.png);
-    height: 16px;
-    width: 16px;
+  background: url(../img/ico/i-home.png);
+  height: 16px;
+  width: 16px;
 }
 
 .i-down {
-    background: url(../img/ico/i-down.png);
-    height: 16px;
-    width: 16px;
+  background: url(../img/ico/i-down.png);
+  height: 16px;
+  width: 16px;
 }
 
 .i-calendar {
-    background: url(../img/ico/i-calendar.png);
-    height: 18px;
-    width: 18px;
+  background: url(../img/ico/i-calendar.png);
+  height: 18px;
+  width: 18px;
 }
 
 .i-arrow-double-left {
-    background: url(../img/ico/i-arrow-double-left.png);
-    height: 16px;
-    width: 16px;
+  background: url(../img/ico/i-arrow-double-left.png);
+  height: 16px;
+  width: 16px;
 }
 
 .i-arrow-left-2 {
-    background: url(../img/ico/i-arrow-left-2.png);
-    height: 16px;
-    width: 16px;
+  background: url(../img/ico/i-arrow-left-2.png);
+  height: 16px;
+  width: 16px;
 }
 
 .i-arrow-double-right {
-    background: url(../img/ico/i-arrow-double-right.png);
-    height: 16px;
-    width: 16px;
+  background: url(../img/ico/i-arrow-double-right.png);
+  height: 16px;
+  width: 16px;
 }
 
 .i-arrow-right {
-    background: url(../img/ico/i-arrow-right.png);
-    height: 16px;
-    width: 16px;
+  background: url(../img/ico/i-arrow-right.png);
+  height: 16px;
+  width: 16px;
 }
 
 .i-plus-b {
-    background: url(../img/ico/i-plus-b.png);
-    height: 16px;
-    width: 16px;
+  background: url(../img/ico/i-plus-b.png);
+  height: 16px;
+  width: 16px;
 }
 
 .i-del {
-    background: url(../img/ico/i-del.png);
-    height: 20px;
-    width: 20px;
+  background: url(../img/ico/i-del.png);
+  height: 20px;
+  width: 20px;
 }
 
 .i-edit {
-    background: url(../img/ico/i-edit.png);
-    height: 20px;
-    width: 20px;
+  background: url(../img/ico/i-edit.png);
+  height: 20px;
+  width: 20px;
 }
